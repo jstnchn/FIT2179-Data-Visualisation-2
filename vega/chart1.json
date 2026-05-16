@@ -29,6 +29,21 @@
           "feature": "ne_110m_admin_0_countries"
         }
       },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8e4de",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.4
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+      },
       "transform": [
         {
           "lookup": "properties.ADM0_A3",
@@ -483,6 +498,9 @@
               "name"
             ]
           }
+        },
+        {
+          "filter": "datum.total_arrivals != null"
         }
       ],
       "mark": {
@@ -492,10 +510,6 @@
       },
       "encoding": {
         "color": {
-          "condition": {
-            "test": "datum.total_arrivals == null",
-            "value": "#e8e4de"
-          },
           "field": "total_arrivals",
           "type": "quantitative",
           "scale": {
