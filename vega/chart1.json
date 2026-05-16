@@ -25,7 +25,7 @@
         {
           "lookup": "properties.ADM0_A3",
           "from": {
-            "data": { "url": "data/arrivals_by_country.csv" },
+            "data": { "url": "../data/arrivals_by_country.csv" },
             "key": "iso3",
             "fields": ["total_arrivals", "name"]
           }
