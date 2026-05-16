@@ -1,88 +1,89 @@
-"SGP,41120085,702,Singapore"
-"IDN,9886077,360,Indonesia"
-"THA,6395376,764,Thailand"
-"CHN,5577427,156,China"
-"BRN,3139296,96,Brunei"
-"IND,2833138,356,India"
-"PHL,1355875,608,Philippines"
-"BGD,1274431,50,Bangladesh"
-"KOR,1256102,410,South Korea"
-"AUS,1033044,36,Australia"
-"VNM,1019451,704,Vietnam"
-"GBR,915353,826,United Kingdom"
-"JPN,900324,392,Japan"
-"TWN,810226,158,Taiwan"
-"USA,708342,840,United States"
-"NPL,465123,524,Nepal"
-"MMR,415731,104,Myanmar"
-"FRA,414547,250,France"
-"PAK,404253,586,Pakistan"
-"DEU,391144,276,Germany"
-"RUS,315404,643,Russia"
-"KHM,236314,116,Cambodia"
-"CAN,223212,124,Canada"
-"NLD,217106,528,Netherlands"
-"SAU,180852,682,Saudi Arabia"
-"ITA,165364,380,Italy"
-"LKA,161907,144,Sri Lanka"
-"ESP,143950,724,Spain"
-"NZL,133346,554,New Zealand"
-"MDV,92992,462,Maldives"
-"POL,72538,616,Poland"
-"CHE,71718,756,Switzerland"
-"EGY,71399,818,Egypt"
-"IRN,68900,364,Iran"
-"LAO,64365,418,Laos"
-"BEL,60452,56,Belgium"
-"TUR,60286,792,Turkey"
-"SWE,59304,752,Sweden"
-"DNK,54789,208,Denmark"
-"KAZ,54169,398,Kazakhstan"
-"OMN,52596,512,Oman"
-"ZAF,52056,710,South Africa"
-"YEM,50728,887,Yemen"
-"UZB,43930,860,Uzbekistan"
-"MAR,43790,504,Morocco"
-"IRQ,42620,368,Iraq"
-"UKR,41225,804,Ukraine"
-"BRA,41082,76,Brazil"
-"AUT,39088,40,Austria"
-"SDN,37011,729,Sudan"
-"NOR,35049,578,Norway"
-"PRT,33991,620,Portugal"
-"DZA,32922,12,Algeria"
-"FIN,30463,246,Finland"
-"JOR,30046,400,Jordan"
-"KWT,29725,414,Kuwait"
-"ROU,29484,642,Romania"
-"CZE,28791,203,Czechia"
-"HKG,28302,344,Hong Kong"
-"MEX,26465,484,Mexico"
-"TUN,25068,788,Tunisia"
-"HUN,24390,348,Hungary"
-"SYR,24274,760,Syria"
-"ARE,19165,784,UAE"
-"MNG,18769,496,Mongolia"
-"ARG,18144,32,Argentina"
-"NGA,17798,566,Nigeria"
-"KEN,16186,404,Kenya"
-"SVK,15902,703,Slovakia"
-"GRC,11043,300,Greece"
-"BGR,10663,100,Bulgaria"
-"CHL,10352,152,Chile"
-"HRV,8270,191,Croatia"
-"COL,7470,170,Colombia"
-"BHR,7284,48,Bahrain"
-"TZA,7120,834,Tanzania"
-"QAT,6819,634,Qatar"
-"PER,5648,604,Peru"
-"UGA,5268,800,Uganda"
-"SRB,3921,688,Serbia"
-"VEN,3383,862,Venezuela"
-"GHA,3351,288,Ghana"
-"URY,2978,858,Uruguay"
-"ECU,2809,218,Ecuador"
-"ETH,1494,231,Ethiopia"
-"BOL,1261,68,Bolivia"
-"PRY,537,600,Paraguay"
-"ISR,21,376,Israel"
+iso3,total_arrivals,name
+SGP,41120085,Singapore
+IDN,9886077,Indonesia
+THA,6395376,Thailand
+CHN,5577427,China
+BRN,3139296,Brunei
+IND,2833138,India
+PHL,1355875,Philippines
+BGD,1274431,Bangladesh
+KOR,1256102,South Korea
+AUS,1033044,Australia
+VNM,1019451,Vietnam
+GBR,915353,United Kingdom
+JPN,900324,Japan
+TWN,810226,Taiwan
+USA,708342,United States
+NPL,465123,Nepal
+MMR,415731,Myanmar
+FRA,414547,France
+PAK,404253,Pakistan
+DEU,391144,Germany
+RUS,315404,Russia
+KHM,236314,Cambodia
+CAN,223212,Canada
+NLD,217106,Netherlands
+SAU,180852,Saudi Arabia
+ITA,165364,Italy
+LKA,161907,Sri Lanka
+ESP,143950,Spain
+NZL,133346,New Zealand
+MDV,92992,Maldives
+POL,72538,Poland
+CHE,71718,Switzerland
+EGY,71399,Egypt
+IRN,68900,Iran
+LAO,64365,Laos
+BEL,60452,Belgium
+TUR,60286,Turkey
+SWE,59304,Sweden
+DNK,54789,Denmark
+KAZ,54169,Kazakhstan
+OMN,52596,Oman
+ZAF,52056,South Africa
+YEM,50728,Yemen
+UZB,43930,Uzbekistan
+MAR,43790,Morocco
+IRQ,42620,Iraq
+UKR,41225,Ukraine
+BRA,41082,Brazil
+AUT,39088,Austria
+SDN,37011,Sudan
+NOR,35049,Norway
+PRT,33991,Portugal
+DZA,32922,Algeria
+FIN,30463,Finland
+JOR,30046,Jordan
+KWT,29725,Kuwait
+ROU,29484,Romania
+CZE,28791,Czechia
+HKG,28302,Hong Kong
+MEX,26465,Mexico
+TUN,25068,Tunisia
+HUN,24390,Hungary
+SYR,24274,Syria
+ARE,19165,UAE
+MNG,18769,Mongolia
+ARG,18144,Argentina
+NGA,17798,Nigeria
+KEN,16186,Kenya
+SVK,15902,Slovakia
+GRC,11043,Greece
+BGR,10663,Bulgaria
+CHL,10352,Chile
+HRV,8270,Croatia
+COL,7470,Colombia
+BHR,7284,Bahrain
+TZA,7120,Tanzania
+QAT,6819,Qatar
+PER,5648,Peru
+UGA,5268,Uganda
+SRB,3921,Serbia
+VEN,3383,Venezuela
+GHA,3351,Ghana
+URY,2978,Uruguay
+ECU,2809,Ecuador
+ETH,1494,Ethiopia
+BOL,1261,Bolivia
+PRY,537,Paraguay
+ISR,21,Israel
