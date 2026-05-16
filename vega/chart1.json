@@ -23,7 +23,7 @@
       },
       "transform": [
         {
-          "lookup": "properties.ISO_A3",
+          "lookup": "properties.ADM0_A3",
           "from": {
             "data": { "url": "data/arrivals_by_country.csv" },
             "key": "iso3",
@@ -53,15 +53,20 @@
             "title": "Total Arrivals (2020–2024)",
             "orient": "bottom-right",
             "format": ".2s",
-            "titleFontSize": 11,
-            "labelFontSize": 10,
+            "titleFontSize": 12,
+            "labelFontSize": 11,
             "titleFont": "DM Sans",
             "labelFont": "DM Sans"
           }
         },
         "tooltip": [
           { "field": "properties.NAME", "type": "nominal", "title": "Country" },
-          { "field": "total_arrivals", "type": "quantitative", "title": "Total Arrivals", "format": "," }
+          {
+            "field": "total_arrivals",
+            "type": "quantitative",
+            "title": "Total Arrivals",
+            "format": ","
+          }
         ]
       }
     }
