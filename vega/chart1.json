@@ -521,13 +521,25 @@
             ]
           },
           "legend": {
-            "title": "Total Arrivals (2020\u20132024)",
+            "title": "Total Arrivals",
             "orient": "bottom-right",
             "format": ".2s",
             "titleFontSize": 12,
             "labelFontSize": 11,
             "titleFont": "DM Sans",
-            "labelFont": "DM Sans"
+            "labelFont": "DM Sans",
+            "gradientLength": 120,
+            "gradientThickness": 12,
+            "titleLimit": 200,
+            "values": [
+              1000,
+              10000,
+              100000,
+              1000000,
+              10000000,
+              50000000
+            ],
+            "labelExpr": "datum.value >= 1000000 ? (datum.value/1000000) + 'M' : datum.value >= 1000 ? (datum.value/1000) + 'K' : datum.value"
           }
         },
         "tooltip": [
