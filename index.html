@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malaysia Tourism — Where the World Comes</title>
-
-  <!-- Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- ═══════════════ HERO ═══════════════ -->
+  <!-- HERO -->
   <section id="hero">
     <div id="hero-left">
       <p class="eyebrow">FIT2179 · Data Visualisation 2 · 2026</p>
-      <h1 class="display">WHERE THE<br><span class="gold">WORLD COMES</span></h1>
+      <h1>WHERE THE<br><span class="gold">WORLD COMES</span></h1>
       <p class="hero-sub">
         Malaysia's tourism story — who visits,<br>
         where they land, and how the industry<br>
         rose, crashed, and came back.
       </p>
-      <div class="pill-row">
-        <span class="pill gold-pill">✈ 2020–2024</span>
-        <span class="pill teal-pill">2 Maps · 10+ Charts</span>
-        <span class="pill">data.gov.my · World Bank</span>
-      </div>
     </div>
     <div id="hero-right">
       <div class="hero-stat">
@@ -50,11 +37,10 @@
     </div>
   </section>
 
-  <!-- ═══════════════ SECTION 1 ═══════════════ -->
+  <!-- SECTION 1 -->
   <div class="section-header gold-bar">
     <span class="section-num">01</span>
     <h2>Who Visits Malaysia?</h2>
-    <span class="pill gold-pill" style="margin-left:auto;">🗺 Map 1 of 2</span>
   </div>
 
   <div class="grid-21">
@@ -74,7 +60,8 @@
       <p class="body-text">
         Malaysia's location at the heart<br>
         of Southeast Asia makes it<br>
-        naturally accessible to neighbours.
+        naturally accessible to neighbours.<br>
+        ASEAN countries lead arrivals.
       </p>
       <div class="stat-pill">
         <span class="stat-num-sm">70%</span>
@@ -104,11 +91,10 @@
     </div>
   </div>
 
-  <!-- ═══════════════ SECTION 2 ═══════════════ -->
+  <!-- SECTION 2 -->
   <div class="section-header teal-bar">
     <span class="section-num">02</span>
     <h2>Where Do They Land?</h2>
-    <span class="pill teal-pill" style="margin-left:auto;">🗺 Map 2 of 2</span>
   </div>
 
   <div class="grid-21">
@@ -135,7 +121,7 @@
         <span class="stat-desc">official points of entry</span>
       </div>
       <div class="stat-pill">
-        <span class="stat-num-sm">>50%</span>
+        <span class="stat-num-sm">&gt;50%</span>
         <span class="stat-desc">of arrivals enter by land</span>
       </div>
     </div>
@@ -158,7 +144,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════ SECTION 3 ═══════════════ -->
+  <!-- SECTION 3 -->
   <div class="section-header red-bar">
     <span class="section-num">03</span>
     <h2>The Crash &amp; The Comeback</h2>
@@ -181,7 +167,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════ SECTION 4 ═══════════════ -->
+  <!-- SECTION 4 -->
   <div class="section-header blue-bar">
     <span class="section-num">04</span>
     <h2>Domestic Tourism at a Glance</h2>
@@ -211,18 +197,17 @@
     </div>
   </div>
 
-  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-col">
       <span class="label">Data Sources</span>
-      <span class="caption">data.gov.my — Immigration Department</span>
-      <span class="caption">World Bank — International Tourism</span>
+      <span class="caption">data.gov.my — Immigration Department of Malaysia</span>
+      <span class="caption">World Bank — International Tourism Statistics</span>
       <span class="caption">Tourism Malaysia — Key Statistics 2024</span>
     </div>
     <div class="footer-col">
       <span class="label">Tools</span>
-      <span class="caption">Vega-Lite v5</span>
-      <span class="caption">HTML · CSS · JavaScript</span>
+      <span class="caption">Vega-Lite v5 · HTML · CSS · JavaScript</span>
       <span class="caption">GitHub Pages</span>
     </div>
     <div class="footer-col">
@@ -235,6 +220,5 @@
   </footer>
 
   <script src="js/vega_lite_vis.js"></script>
-
 </body>
 </html>
