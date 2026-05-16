@@ -20,7 +20,7 @@ body {
   background: var(--bg);
   color: var(--text-dark);
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.55;
   overflow-x: hidden;
   max-width: 1280px;
@@ -34,33 +34,33 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 
 .label {
   font-family: 'DM Sans', sans-serif;
-  font-size: 9.5px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-soft);
   font-weight: 600;
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .caption {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--text-soft);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .body-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-mid);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .eyebrow {
   font-family: 'DM Sans', sans-serif;
-  font-size: 9.5px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-mute);
 }
@@ -77,24 +77,24 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
   border-right: 1px solid var(--border-dark);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 h1 {
-  font-size: clamp(30px, 4vw, 52px);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(32px, 4vw, 54px);
   font-weight: 700;
   color: var(--text-dark);
   line-height: 1.05;
-  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 h1 span.gold { color: var(--gold); }
 
 .hero-sub {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-mid);
-  max-width: 38ch;
   line-height: 1.6;
 }
 
@@ -106,21 +106,31 @@ h1 span.gold { color: var(--gold); }
 
 .hero-stat {
   padding: 14px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
 }
 
-.hero-stat:last-child  { border-bottom: none; }
-.hero-stat:first-child { border-left: 3px solid var(--gold); }
-.hero-stat:last-child  { border-left: 3px solid var(--teal); }
+.hero-stat:last-child   { border-bottom: none; }
+.hero-stat:first-child  { border-left: 3px solid var(--gold); }
+.hero-stat:last-child   { border-left: 3px solid var(--teal); }
+
+/* Left text, right big number — side by side */
+.hero-stat-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
 
 .stat-num {
-  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1;
   color: var(--text-dark);
+  white-space: nowrap;
 }
 
 /* ── SECTION HEADERS ── */
@@ -128,25 +138,26 @@ h1 span.gold { color: var(--gold); }
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-top: 2px solid var(--rule);
   border-bottom: 1px solid var(--border-dark);
   background: var(--bg-soft);
 }
 
 .section-header h2 {
-  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
   font-weight: 700;
   color: var(--text-dark);
 }
 
 .section-num {
   font-family: 'DM Sans', sans-serif;
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #fff;
-  padding: 2px 5px;
+  padding: 2px 6px;
   border-radius: 2px;
 }
 
@@ -172,29 +183,30 @@ h1 span.gold { color: var(--gold); }
 }
 
 .chart-header {
-  padding: 7px 10px 5px;
+  padding: 8px 12px 6px;
   border-bottom: 1px solid var(--border);
 }
 
 .chart-title {
-  font-size: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 #chart1 { min-height: 420px; }
 #chart4 { min-height: 380px; }
-#chart2, #chart3, #chart5, #chart6, #chart7, #chart8 { min-height: 230px; }
-#chart9, #chart10, #chart11 { min-height: 200px; }
+#chart2, #chart3, #chart5, #chart6, #chart7, #chart8 { min-height: 240px; }
+#chart9, #chart10, #chart11 { min-height: 210px; }
 
 /* ── SIDEBAR ── */
 .sidebar {
   background: var(--bg-soft);
-  padding: 14px 12px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   border-left: 3px solid var(--gold);
 }
 
@@ -203,12 +215,13 @@ h1 span.gold { color: var(--gold); }
 .sidebar-blue { border-left-color: var(--blue); }
 
 .pull-quote {
-  font-size: 12.5px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13.5px;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--text-dark);
   border-left: 2px solid var(--gold);
-  padding-left: 8px;
+  padding-left: 10px;
 }
 
 .sidebar-teal .pull-quote { border-left-color: var(--teal); }
@@ -217,13 +230,14 @@ h1 span.gold { color: var(--gold); }
 .stat-pill {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
   border-top: 1px solid var(--border);
-  padding-top: 7px;
+  padding-top: 8px;
 }
 
 .stat-num-sm {
-  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
   color: var(--gold);
@@ -235,9 +249,8 @@ h1 span.gold { color: var(--gold); }
 
 .stat-desc {
   font-family: 'DM Sans', sans-serif;
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--text-soft);
-  max-width: 24ch;
 }
 
 /* ── VEGA ── */
@@ -248,13 +261,13 @@ h1 span.gold { color: var(--gold); }
 footer {
   background: var(--bg-soft);
   border-top: 2px solid var(--rule);
-  padding: 14px 12px;
+  padding: 16px 14px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-col { padding: 0 12px; border-right: 1px solid var(--border); }
+.footer-col { padding: 0 14px; border-right: 1px solid var(--border); }
 .footer-col:first-child { padding-left: 0; }
 .footer-col:last-child  { border-right: none; }
-.footer-col .label   { margin-bottom: 4px; }
-.footer-col .caption { display: block; margin-bottom: 2px; }
+.footer-col .label   { margin-bottom: 5px; }
+.footer-col .caption { display: block; margin-bottom: 3px; }
