@@ -12,10 +12,6 @@
   --red:         #a01818;
   --blue:        #1a3d7a;
   --rule:        #111111;
-
-  /* Shared column split — used by hero, grid-21, and sidebar to align */
-  --col-split: 2fr 1fr;
-  --right-col-width: calc(100% / 3);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,7 +23,6 @@ body {
   font-size: 15px;
   line-height: 1.6;
   overflow-x: hidden;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -38,41 +33,42 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 
 .label {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11.5px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-soft);
   font-weight: 600;
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .caption {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text-soft);
   line-height: 1.5;
 }
 
 .body-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 14.5px;
   color: var(--text-mid);
   line-height: 1.65;
 }
 
 .eyebrow {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11.5px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-mute);
 }
 
-/* ── HERO ── */
+/* ── HERO ──
+   grid-template-columns must match grid-21 exactly for lines to align */
 #hero {
   display: grid;
-  grid-template-columns: var(--col-split);
+  grid-template-columns: 2fr 1fr;
   border-bottom: 2px solid var(--rule);
 }
 
@@ -97,7 +93,7 @@ h1 span.gold { color: var(--gold); }
 
 .hero-sub {
   font-family: 'DM Sans', sans-serif;
-  font-size: 15px;
+  font-size: 15.5px;
   color: var(--text-mid);
   line-height: 1.6;
 }
@@ -109,7 +105,7 @@ h1 span.gold { color: var(--gold); }
 }
 
 .hero-stat {
-  padding: 16px 20px;
+  padding: 18px 22px;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -129,7 +125,7 @@ h1 span.gold { color: var(--gold); }
 
 .stat-num {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1;
   color: var(--text-dark);
@@ -141,7 +137,7 @@ h1 span.gold { color: var(--gold); }
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-top: 2px solid var(--rule);
   border-bottom: 1px solid var(--border-dark);
   background: var(--bg-soft);
@@ -149,18 +145,18 @@ h1 span.gold { color: var(--gold); }
 
 .section-header h2 {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text-dark);
 }
 
 .section-num {
   font-family: 'DM Sans', sans-serif;
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #fff;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 2px;
 }
 
@@ -170,14 +166,14 @@ h1 span.gold { color: var(--gold); }
 .blue-bar .section-num { background: var(--blue); }
 
 /* ── GRIDS ──
-   grid-21 uses same column split as hero so vertical lines align */
-.grid-2  {
+   grid-21 MUST use same 2fr 1fr as hero for vertical lines to align */
+.grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid var(--border);
 }
 
-.grid-3  {
+.grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1px solid var(--border);
@@ -185,7 +181,7 @@ h1 span.gold { color: var(--gold); }
 
 .grid-21 {
   display: grid;
-  grid-template-columns: var(--col-split);
+  grid-template-columns: 2fr 1fr;
   border-bottom: 1px solid var(--border);
 }
 
@@ -201,16 +197,16 @@ h1 span.gold { color: var(--gold); }
 }
 
 .chart-header {
-  padding: 9px 14px 7px;
+  padding: 10px 16px 8px;
   border-bottom: 1px solid var(--border);
 }
 
 .chart-title {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 #chart1 { min-height: 420px; }
@@ -222,10 +218,10 @@ h1 span.gold { color: var(--gold); }
 /* ── SIDEBAR ── */
 .sidebar {
   background: var(--bg-soft);
-  padding: 18px 16px;
+  padding: 20px 18px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   border-left: 3px solid var(--gold);
 }
 
@@ -235,7 +231,7 @@ h1 span.gold { color: var(--gold); }
 
 .pull-quote {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.5;
   color: var(--text-dark);
@@ -249,14 +245,14 @@ h1 span.gold { color: var(--gold); }
 .stat-pill {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
   border-top: 1px solid var(--border);
   padding-top: 10px;
 }
 
 .stat-num-sm {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1;
   color: var(--gold);
@@ -268,7 +264,7 @@ h1 span.gold { color: var(--gold); }
 
 .stat-desc {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text-soft);
 }
 
@@ -280,13 +276,13 @@ h1 span.gold { color: var(--gold); }
 footer {
   background: var(--bg-soft);
   border-top: 2px solid var(--rule);
-  padding: 16px 14px;
+  padding: 18px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-col { padding: 0 14px; border-right: 1px solid var(--border); }
+.footer-col { padding: 0 16px; border-right: 1px solid var(--border); }
 .footer-col:first-child { padding-left: 0; }
 .footer-col:last-child  { border-right: none; }
-.footer-col .label   { margin-bottom: 5px; }
-.footer-col .caption { display: block; margin-bottom: 3px; font-size: 13px; }
+.footer-col .label   { margin-bottom: 6px; }
+.footer-col .caption { display: block; margin-bottom: 4px; font-size: 13.5px; }
