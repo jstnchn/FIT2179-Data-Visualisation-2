@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malaysia Tourism — Where the World Comes</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="hero-left">
+      <p class="eyebrow">FIT2179 · Data Visualisation 2</p>
+      <h1>WHERE THE <span class="gold">WORLD COMES</span></h1>
+      <p class="hero-sub">Malaysia's tourism story — who visits, where they land, and how the industry rose, crashed, and came back.</p>
+    </div>
+    <div id="hero-right">
+      <div class="hero-stat">
+        <div class="hero-stat-inner">
+          <div>
+            <span class="label">Tourist Arrivals 2024</span>
+            <span class="caption">International visitors to Malaysia</span>
+          </div>
+          <span class="stat-num">25M</span>
+        </div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-inner">
+          <div>
+            <span class="label">Inbound Expenditure 2024</span>
+            <span class="caption">Total inbound tourism spending</span>
+          </div>
+          <span class="stat-num">RM107B</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1 -->
+  <div class="section-header gold-bar">
+    <span class="section-num">01</span>
+    <h2>Who Visits Malaysia?</h2>
+  </div>
+
+  <div class="grid-21">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Tourist Arrivals by Country of Origin</span>
+        <span class="caption">Total arrivals 2020–2024 · hover a country for details</span>
+      </div>
+      <div id="chart1"></div>
+    </div>
+    <div class="sidebar">
+      <span class="label">Global Context</span>
+      <p class="pull-quote">Singapore, Indonesia and China top the list of visitor origins.</p>
+      <p class="body-text">Malaysia's location at the heart of Southeast Asia makes it naturally accessible to neighbours. ASEAN countries lead arrivals.</p>
+      <div class="stat-pill">
+        <span class="stat-num-sm">70%</span>
+        <span class="stat-desc">of arrivals from ASEAN countries</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num-sm">225</span>
+        <span class="stat-desc">nationalities recorded arriving</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Long-Term Arrival Trends (1995–2024)</span>
+        <span class="caption">Annual tourist arrivals · World Bank + data.gov.my</span>
+      </div>
+      <div id="chart2"></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Monthly Arrivals by Top 5 Countries</span>
+        <span class="caption">2020–2024 · click legend to filter</span>
+      </div>
+      <div id="chart3"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-header teal-bar">
+    <span class="section-num">02</span>
+    <h2>Where Do They Land?</h2>
+  </div>
+
+  <div class="grid-21">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Arrivals by Point of Entry</span>
+        <span class="caption">Proportional symbol map · size = total arrivals · hover for details</span>
+      </div>
+      <div id="chart4"></div>
+    </div>
+    <div class="sidebar sidebar-teal">
+      <span class="label">Entry Points</span>
+      <p class="pull-quote">KLIA and Johor land crossings dominate Malaysia's entry points.</p>
+      <p class="body-text">Malaysia has 84 official points of entry — by air, land, and sea. Land crossings lead in volume.</p>
+      <div class="stat-pill">
+        <span class="stat-num-sm">84</span>
+        <span class="stat-desc">official points of entry</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num-sm">&gt;50%</span>
+        <span class="stat-desc">of arrivals enter by land</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Arrivals by Entry Type</span>
+        <span class="caption">Air · Land · Sea · 2020–2024</span>
+      </div>
+      <div id="chart5"></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Top 10 Entry Points by Total Arrivals</span>
+        <span class="caption">Ranked · 2020–2023</span>
+      </div>
+      <div id="chart6"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section-header red-bar">
+    <span class="section-num">03</span>
+    <h2>The Crash &amp; The Comeback</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Monthly Recovery 2020–2024</span>
+        <span class="caption">Total arrivals per month · all nationalities</span>
+      </div>
+      <div id="chart7"></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Domestic Tourism Expenditure</span>
+        <span class="caption">RM million · 2017–2024</span>
+      </div>
+      <div id="chart8"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-header blue-bar">
+    <span class="section-num">04</span>
+    <h2>Domestic Tourism at a Glance</h2>
+  </div>
+
+  <div class="grid-3">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Domestic Visitors</span>
+        <span class="caption">Annual visitors · millions · 2017–2024</span>
+      </div>
+      <div id="chart9"></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Number of Tourism Trips</span>
+        <span class="caption">Millions · 2017–2024</span>
+      </div>
+      <div id="chart10"></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="chart-title">Average Length of Stay</span>
+        <span class="caption">Nights per trip · 2017–2024</span>
+      </div>
+      <div id="chart11"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-col">
+      <span class="label">Data Sources</span>
+      <span class="caption">data.gov.my — Immigration Department of Malaysia</span>
+      <span class="caption">World Bank — International Tourism Statistics</span>
+      <span class="caption">Tourism Malaysia — Key Statistics 2024</span>
+    </div>
+    <div class="footer-col">
+      <span class="label">Tools</span>
+      <span class="caption">Vega-Lite v5 · HTML · CSS · JavaScript · GitHub Pages</span>
+    </div>
+    <div class="footer-col">
+      <span class="label">Authorship</span>
+      <span class="caption">Chin Rong Sheng · 35380578</span>
+      <span class="caption">FIT2179 Data Visualisation 2</span>
+      <span class="caption">Monash University Malaysia · 16 May 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/vega_lite_vis.js"></script>
+</body>
+</html>
