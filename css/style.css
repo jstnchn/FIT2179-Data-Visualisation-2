@@ -71,11 +71,19 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 }
 
 #hero-left {
-  padding: 24px 20px 20px;
+  padding: 20px 20px 20px;
   border-right: 1px solid var(--border-dark);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+}
+
+#hero-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 h1 {
@@ -206,13 +214,15 @@ h1 span.gold { color: var(--gold); }
   margin-bottom: 3px;
 }
 
-#chart1 { min-height: 420px; }
+#chart1 { min-height: 360px; height: 360px; }
 #chart4 { min-height: 380px; }
 #chart2, #chart3, #chart5, #chart6,
 #chart7, #chart8 { min-height: 240px; }
 #chart9, #chart10, #chart11 { min-height: 210px; }
 
-/* ── SIDEBAR ── */
+/* ── SIDEBAR ──
+   min-height ensures sidebar aligns its bottom border
+   with the chart block beside it */
 .sidebar {
   background: var(--bg-soft);
   padding: 20px 18px;
@@ -220,6 +230,7 @@ h1 span.gold { color: var(--gold); }
   flex-direction: column;
   gap: 16px;
   border-left: 3px solid var(--gold);
+  min-height: 100%;
 }
 
 .sidebar-teal { border-left-color: var(--teal); }
