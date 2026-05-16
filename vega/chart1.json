@@ -2,12 +2,17 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 420,
-  "projection": { "type": "equalEarth" },
+  "projection": {
+    "type": "equalEarth"
+  },
   "layer": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
-        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_graticules_30"
+        }
       },
       "mark": {
         "type": "geoshape",
@@ -19,15 +24,464 @@
     {
       "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
-        "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
       },
       "transform": [
         {
           "lookup": "properties.ADM0_A3",
           "from": {
-            "data": { "url": "../data/arrivals_by_country.csv" },
+            "data": {
+              "values": [
+                {
+                  "iso3": "SGP",
+                  "total_arrivals": 41120085,
+                  "name": "Singapore"
+                },
+                {
+                  "iso3": "IDN",
+                  "total_arrivals": 9886077,
+                  "name": "Indonesia"
+                },
+                {
+                  "iso3": "THA",
+                  "total_arrivals": 6395376,
+                  "name": "Thailand"
+                },
+                {
+                  "iso3": "CHN",
+                  "total_arrivals": 5577427,
+                  "name": "China"
+                },
+                {
+                  "iso3": "BRN",
+                  "total_arrivals": 3139296,
+                  "name": "Brunei"
+                },
+                {
+                  "iso3": "IND",
+                  "total_arrivals": 2833138,
+                  "name": "India"
+                },
+                {
+                  "iso3": "PHL",
+                  "total_arrivals": 1355875,
+                  "name": "Philippines"
+                },
+                {
+                  "iso3": "BGD",
+                  "total_arrivals": 1274431,
+                  "name": "Bangladesh"
+                },
+                {
+                  "iso3": "KOR",
+                  "total_arrivals": 1256102,
+                  "name": "South Korea"
+                },
+                {
+                  "iso3": "AUS",
+                  "total_arrivals": 1033044,
+                  "name": "Australia"
+                },
+                {
+                  "iso3": "VNM",
+                  "total_arrivals": 1019451,
+                  "name": "Vietnam"
+                },
+                {
+                  "iso3": "GBR",
+                  "total_arrivals": 915353,
+                  "name": "United Kingdom"
+                },
+                {
+                  "iso3": "JPN",
+                  "total_arrivals": 900324,
+                  "name": "Japan"
+                },
+                {
+                  "iso3": "TWN",
+                  "total_arrivals": 810226,
+                  "name": "Taiwan"
+                },
+                {
+                  "iso3": "USA",
+                  "total_arrivals": 708342,
+                  "name": "United States"
+                },
+                {
+                  "iso3": "NPL",
+                  "total_arrivals": 465123,
+                  "name": "Nepal"
+                },
+                {
+                  "iso3": "MMR",
+                  "total_arrivals": 415731,
+                  "name": "Myanmar"
+                },
+                {
+                  "iso3": "FRA",
+                  "total_arrivals": 414547,
+                  "name": "France"
+                },
+                {
+                  "iso3": "PAK",
+                  "total_arrivals": 404253,
+                  "name": "Pakistan"
+                },
+                {
+                  "iso3": "DEU",
+                  "total_arrivals": 391144,
+                  "name": "Germany"
+                },
+                {
+                  "iso3": "RUS",
+                  "total_arrivals": 315404,
+                  "name": "Russia"
+                },
+                {
+                  "iso3": "KHM",
+                  "total_arrivals": 236314,
+                  "name": "Cambodia"
+                },
+                {
+                  "iso3": "CAN",
+                  "total_arrivals": 223212,
+                  "name": "Canada"
+                },
+                {
+                  "iso3": "NLD",
+                  "total_arrivals": 217106,
+                  "name": "Netherlands"
+                },
+                {
+                  "iso3": "SAU",
+                  "total_arrivals": 180852,
+                  "name": "Saudi Arabia"
+                },
+                {
+                  "iso3": "ITA",
+                  "total_arrivals": 165364,
+                  "name": "Italy"
+                },
+                {
+                  "iso3": "LKA",
+                  "total_arrivals": 161907,
+                  "name": "Sri Lanka"
+                },
+                {
+                  "iso3": "ESP",
+                  "total_arrivals": 143950,
+                  "name": "Spain"
+                },
+                {
+                  "iso3": "NZL",
+                  "total_arrivals": 133346,
+                  "name": "New Zealand"
+                },
+                {
+                  "iso3": "MDV",
+                  "total_arrivals": 92992,
+                  "name": "Maldives"
+                },
+                {
+                  "iso3": "POL",
+                  "total_arrivals": 72538,
+                  "name": "Poland"
+                },
+                {
+                  "iso3": "CHE",
+                  "total_arrivals": 71718,
+                  "name": "Switzerland"
+                },
+                {
+                  "iso3": "EGY",
+                  "total_arrivals": 71399,
+                  "name": "Egypt"
+                },
+                {
+                  "iso3": "IRN",
+                  "total_arrivals": 68900,
+                  "name": "Iran"
+                },
+                {
+                  "iso3": "LAO",
+                  "total_arrivals": 64365,
+                  "name": "Laos"
+                },
+                {
+                  "iso3": "BEL",
+                  "total_arrivals": 60452,
+                  "name": "Belgium"
+                },
+                {
+                  "iso3": "TUR",
+                  "total_arrivals": 60286,
+                  "name": "Turkey"
+                },
+                {
+                  "iso3": "SWE",
+                  "total_arrivals": 59304,
+                  "name": "Sweden"
+                },
+                {
+                  "iso3": "DNK",
+                  "total_arrivals": 54789,
+                  "name": "Denmark"
+                },
+                {
+                  "iso3": "KAZ",
+                  "total_arrivals": 54169,
+                  "name": "Kazakhstan"
+                },
+                {
+                  "iso3": "OMN",
+                  "total_arrivals": 52596,
+                  "name": "Oman"
+                },
+                {
+                  "iso3": "ZAF",
+                  "total_arrivals": 52056,
+                  "name": "South Africa"
+                },
+                {
+                  "iso3": "YEM",
+                  "total_arrivals": 50728,
+                  "name": "Yemen"
+                },
+                {
+                  "iso3": "UZB",
+                  "total_arrivals": 43930,
+                  "name": "Uzbekistan"
+                },
+                {
+                  "iso3": "MAR",
+                  "total_arrivals": 43790,
+                  "name": "Morocco"
+                },
+                {
+                  "iso3": "IRQ",
+                  "total_arrivals": 42620,
+                  "name": "Iraq"
+                },
+                {
+                  "iso3": "UKR",
+                  "total_arrivals": 41225,
+                  "name": "Ukraine"
+                },
+                {
+                  "iso3": "BRA",
+                  "total_arrivals": 41082,
+                  "name": "Brazil"
+                },
+                {
+                  "iso3": "AUT",
+                  "total_arrivals": 39088,
+                  "name": "Austria"
+                },
+                {
+                  "iso3": "SDN",
+                  "total_arrivals": 37011,
+                  "name": "Sudan"
+                },
+                {
+                  "iso3": "NOR",
+                  "total_arrivals": 35049,
+                  "name": "Norway"
+                },
+                {
+                  "iso3": "PRT",
+                  "total_arrivals": 33991,
+                  "name": "Portugal"
+                },
+                {
+                  "iso3": "DZA",
+                  "total_arrivals": 32922,
+                  "name": "Algeria"
+                },
+                {
+                  "iso3": "FIN",
+                  "total_arrivals": 30463,
+                  "name": "Finland"
+                },
+                {
+                  "iso3": "JOR",
+                  "total_arrivals": 30046,
+                  "name": "Jordan"
+                },
+                {
+                  "iso3": "KWT",
+                  "total_arrivals": 29725,
+                  "name": "Kuwait"
+                },
+                {
+                  "iso3": "ROU",
+                  "total_arrivals": 29484,
+                  "name": "Romania"
+                },
+                {
+                  "iso3": "CZE",
+                  "total_arrivals": 28791,
+                  "name": "Czechia"
+                },
+                {
+                  "iso3": "HKG",
+                  "total_arrivals": 28302,
+                  "name": "Hong Kong"
+                },
+                {
+                  "iso3": "MEX",
+                  "total_arrivals": 26465,
+                  "name": "Mexico"
+                },
+                {
+                  "iso3": "TUN",
+                  "total_arrivals": 25068,
+                  "name": "Tunisia"
+                },
+                {
+                  "iso3": "HUN",
+                  "total_arrivals": 24390,
+                  "name": "Hungary"
+                },
+                {
+                  "iso3": "SYR",
+                  "total_arrivals": 24274,
+                  "name": "Syria"
+                },
+                {
+                  "iso3": "ARE",
+                  "total_arrivals": 19165,
+                  "name": "UAE"
+                },
+                {
+                  "iso3": "MNG",
+                  "total_arrivals": 18769,
+                  "name": "Mongolia"
+                },
+                {
+                  "iso3": "ARG",
+                  "total_arrivals": 18144,
+                  "name": "Argentina"
+                },
+                {
+                  "iso3": "NGA",
+                  "total_arrivals": 17798,
+                  "name": "Nigeria"
+                },
+                {
+                  "iso3": "KEN",
+                  "total_arrivals": 16186,
+                  "name": "Kenya"
+                },
+                {
+                  "iso3": "SVK",
+                  "total_arrivals": 15902,
+                  "name": "Slovakia"
+                },
+                {
+                  "iso3": "GRC",
+                  "total_arrivals": 11043,
+                  "name": "Greece"
+                },
+                {
+                  "iso3": "BGR",
+                  "total_arrivals": 10663,
+                  "name": "Bulgaria"
+                },
+                {
+                  "iso3": "CHL",
+                  "total_arrivals": 10352,
+                  "name": "Chile"
+                },
+                {
+                  "iso3": "HRV",
+                  "total_arrivals": 8270,
+                  "name": "Croatia"
+                },
+                {
+                  "iso3": "COL",
+                  "total_arrivals": 7470,
+                  "name": "Colombia"
+                },
+                {
+                  "iso3": "BHR",
+                  "total_arrivals": 7284,
+                  "name": "Bahrain"
+                },
+                {
+                  "iso3": "TZA",
+                  "total_arrivals": 7120,
+                  "name": "Tanzania"
+                },
+                {
+                  "iso3": "QAT",
+                  "total_arrivals": 6819,
+                  "name": "Qatar"
+                },
+                {
+                  "iso3": "PER",
+                  "total_arrivals": 5648,
+                  "name": "Peru"
+                },
+                {
+                  "iso3": "UGA",
+                  "total_arrivals": 5268,
+                  "name": "Uganda"
+                },
+                {
+                  "iso3": "SRB",
+                  "total_arrivals": 3921,
+                  "name": "Serbia"
+                },
+                {
+                  "iso3": "VEN",
+                  "total_arrivals": 3383,
+                  "name": "Venezuela"
+                },
+                {
+                  "iso3": "GHA",
+                  "total_arrivals": 3351,
+                  "name": "Ghana"
+                },
+                {
+                  "iso3": "URY",
+                  "total_arrivals": 2978,
+                  "name": "Uruguay"
+                },
+                {
+                  "iso3": "ECU",
+                  "total_arrivals": 2809,
+                  "name": "Ecuador"
+                },
+                {
+                  "iso3": "ETH",
+                  "total_arrivals": 1494,
+                  "name": "Ethiopia"
+                },
+                {
+                  "iso3": "BOL",
+                  "total_arrivals": 1261,
+                  "name": "Bolivia"
+                },
+                {
+                  "iso3": "PRY",
+                  "total_arrivals": 537,
+                  "name": "Paraguay"
+                },
+                {
+                  "iso3": "ISR",
+                  "total_arrivals": 21,
+                  "name": "Israel"
+                }
+              ]
+            },
             "key": "iso3",
-            "fields": ["total_arrivals", "name"]
+            "fields": [
+              "total_arrivals",
+              "name"
+            ]
           }
         }
       ],
@@ -47,10 +501,13 @@
           "scale": {
             "type": "log",
             "scheme": "oranges",
-            "domain": [1000, 50000000]
+            "domain": [
+              1000,
+              50000000
+            ]
           },
           "legend": {
-            "title": "Total Arrivals (2020–2024)",
+            "title": "Total Arrivals (2020\u20132024)",
             "orient": "bottom-right",
             "format": ".2s",
             "titleFontSize": 12,
@@ -60,14 +517,25 @@
           }
         },
         "tooltip": [
-          { "field": "properties.NAME", "type": "nominal", "title": "Country" },
-          { "field": "total_arrivals", "type": "quantitative", "title": "Total Arrivals", "format": "," }
+          {
+            "field": "properties.NAME",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "total_arrivals",
+            "type": "quantitative",
+            "title": "Total Arrivals",
+            "format": ","
+          }
         ]
       }
     }
   ],
   "config": {
     "background": "transparent",
-    "view": { "stroke": "transparent" }
+    "view": {
+      "stroke": "transparent"
+    }
   }
 }
