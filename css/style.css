@@ -12,6 +12,10 @@
   --red:         #a01818;
   --blue:        #1a3d7a;
   --rule:        #111111;
+
+  /* Shared column split — used by hero, grid-21, and sidebar to align */
+  --col-split: 2fr 1fr;
+  --right-col-width: calc(100% / 3);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -20,8 +24,8 @@ body {
   background: var(--bg);
   color: var(--text-dark);
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.6;
   overflow-x: hidden;
   max-width: 1280px;
   margin: 0 auto;
@@ -34,32 +38,32 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 
 .label {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 11.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-soft);
   font-weight: 600;
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .caption {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--text-soft);
   line-height: 1.5;
 }
 
 .body-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-mid);
   line-height: 1.65;
 }
 
 .eyebrow {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 11.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-mute);
@@ -68,7 +72,7 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 /* ── HERO ── */
 #hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: var(--col-split);
   border-bottom: 2px solid var(--rule);
 }
 
@@ -82,7 +86,7 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
 
 h1 {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(32px, 4vw, 54px);
+  font-size: clamp(34px, 4.5vw, 58px);
   font-weight: 700;
   color: var(--text-dark);
   line-height: 1.05;
@@ -93,7 +97,7 @@ h1 span.gold { color: var(--gold); }
 
 .hero-sub {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-mid);
   line-height: 1.6;
 }
@@ -105,28 +109,27 @@ h1 span.gold { color: var(--gold); }
 }
 
 .hero-stat {
-  padding: 14px 18px;
+  padding: 16px 20px;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
 }
 
-.hero-stat:last-child   { border-bottom: none; }
-.hero-stat:first-child  { border-left: 3px solid var(--gold); }
-.hero-stat:last-child   { border-left: 3px solid var(--teal); }
+.hero-stat:last-child  { border-bottom: none; }
+.hero-stat:first-child { border-left: 3px solid var(--gold); }
+.hero-stat:last-child  { border-left: 3px solid var(--teal); }
 
-/* Left text, right big number — side by side */
 .hero-stat-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 12px;
+  gap: 14px;
 }
 
 .stat-num {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1;
   color: var(--text-dark);
@@ -137,7 +140,7 @@ h1 span.gold { color: var(--gold); }
 .section-header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 6px 14px;
   border-top: 2px solid var(--rule);
   border-bottom: 1px solid var(--border-dark);
@@ -146,14 +149,14 @@ h1 span.gold { color: var(--gold); }
 
 .section-header h2 {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-dark);
 }
 
 .section-num {
   font-family: 'DM Sans', sans-serif;
-  font-size: 9.5px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #fff;
@@ -166,14 +169,29 @@ h1 span.gold { color: var(--gold); }
 .red-bar  .section-num { background: var(--red);  }
 .blue-bar .section-num { background: var(--blue); }
 
-/* ── GRIDS ── */
-.grid-2  { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border); }
-.grid-3  { display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid var(--border); }
-.grid-21 { display: grid; grid-template-columns: 2fr 1fr; border-bottom: 1px solid var(--border); }
+/* ── GRIDS ──
+   grid-21 uses same column split as hero so vertical lines align */
+.grid-2  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.grid-3  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.grid-21 {
+  display: grid;
+  grid-template-columns: var(--col-split);
+  border-bottom: 1px solid var(--border);
+}
 
 .grid-2  > * + * { border-left: 1px solid var(--border); }
 .grid-3  > * + * { border-left: 1px solid var(--border); }
-.grid-21 > * + * { border-left: 1px solid var(--border); }
+.grid-21 > * + * { border-left: 1px solid var(--border-dark); }
 
 /* ── CHART BLOCKS ── */
 .chart-block {
@@ -183,13 +201,13 @@ h1 span.gold { color: var(--gold); }
 }
 
 .chart-header {
-  padding: 8px 12px 6px;
+  padding: 9px 14px 7px;
   border-bottom: 1px solid var(--border);
 }
 
 .chart-title {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 2px;
@@ -197,16 +215,17 @@ h1 span.gold { color: var(--gold); }
 
 #chart1 { min-height: 420px; }
 #chart4 { min-height: 380px; }
-#chart2, #chart3, #chart5, #chart6, #chart7, #chart8 { min-height: 240px; }
+#chart2, #chart3, #chart5, #chart6,
+#chart7, #chart8 { min-height: 240px; }
 #chart9, #chart10, #chart11 { min-height: 210px; }
 
 /* ── SIDEBAR ── */
 .sidebar {
   background: var(--bg-soft);
-  padding: 16px 14px;
+  padding: 18px 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   border-left: 3px solid var(--gold);
 }
 
@@ -216,7 +235,7 @@ h1 span.gold { color: var(--gold); }
 
 .pull-quote {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 700;
   line-height: 1.5;
   color: var(--text-dark);
@@ -232,12 +251,12 @@ h1 span.gold { color: var(--gold); }
   flex-direction: column;
   gap: 2px;
   border-top: 1px solid var(--border);
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .stat-num-sm {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
   color: var(--gold);
@@ -249,7 +268,7 @@ h1 span.gold { color: var(--gold); }
 
 .stat-desc {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-soft);
 }
 
@@ -270,4 +289,4 @@ footer {
 .footer-col:first-child { padding-left: 0; }
 .footer-col:last-child  { border-right: none; }
 .footer-col .label   { margin-bottom: 5px; }
-.footer-col .caption { display: block; margin-bottom: 3px; }
+.footer-col .caption { display: block; margin-bottom: 3px; font-size: 13px; }
