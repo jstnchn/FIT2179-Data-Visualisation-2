@@ -1,0 +1,1668 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 240,
+  "autosize": "fit",
+  "padding": 0,
+  "data": {
+    "values": [
+      {
+        "month": "2020-01",
+        "country_name": "Brunei",
+        "arrivals": 88501
+      },
+      {
+        "month": "2020-02",
+        "country_name": "Brunei",
+        "arrivals": 64729
+      },
+      {
+        "month": "2020-03",
+        "country_name": "Brunei",
+        "arrivals": 31596
+      },
+      {
+        "month": "2020-04",
+        "country_name": "Brunei",
+        "arrivals": 254
+      },
+      {
+        "month": "2020-05",
+        "country_name": "Brunei",
+        "arrivals": 330
+      },
+      {
+        "month": "2020-06",
+        "country_name": "Brunei",
+        "arrivals": 465
+      },
+      {
+        "month": "2020-07",
+        "country_name": "Brunei",
+        "arrivals": 350
+      },
+      {
+        "month": "2020-08",
+        "country_name": "Brunei",
+        "arrivals": 219
+      },
+      {
+        "month": "2020-09",
+        "country_name": "Brunei",
+        "arrivals": 396
+      },
+      {
+        "month": "2020-10",
+        "country_name": "Brunei",
+        "arrivals": 228
+      },
+      {
+        "month": "2020-11",
+        "country_name": "Brunei",
+        "arrivals": 334
+      },
+      {
+        "month": "2020-12",
+        "country_name": "Brunei",
+        "arrivals": 386
+      },
+      {
+        "month": "2021-01",
+        "country_name": "Brunei",
+        "arrivals": 337
+      },
+      {
+        "month": "2021-02",
+        "country_name": "Brunei",
+        "arrivals": 362
+      },
+      {
+        "month": "2021-03",
+        "country_name": "Brunei",
+        "arrivals": 451
+      },
+      {
+        "month": "2021-04",
+        "country_name": "Brunei",
+        "arrivals": 411
+      },
+      {
+        "month": "2021-05",
+        "country_name": "Brunei",
+        "arrivals": 290
+      },
+      {
+        "month": "2021-06",
+        "country_name": "Brunei",
+        "arrivals": 316
+      },
+      {
+        "month": "2021-07",
+        "country_name": "Brunei",
+        "arrivals": 421
+      },
+      {
+        "month": "2021-08",
+        "country_name": "Brunei",
+        "arrivals": 309
+      },
+      {
+        "month": "2021-09",
+        "country_name": "Brunei",
+        "arrivals": 272
+      },
+      {
+        "month": "2021-10",
+        "country_name": "Brunei",
+        "arrivals": 237
+      },
+      {
+        "month": "2021-11",
+        "country_name": "Brunei",
+        "arrivals": 353
+      },
+      {
+        "month": "2021-12",
+        "country_name": "Brunei",
+        "arrivals": 403
+      },
+      {
+        "month": "2022-01",
+        "country_name": "Brunei",
+        "arrivals": 505
+      },
+      {
+        "month": "2022-02",
+        "country_name": "Brunei",
+        "arrivals": 371
+      },
+      {
+        "month": "2022-03",
+        "country_name": "Brunei",
+        "arrivals": 522
+      },
+      {
+        "month": "2022-04",
+        "country_name": "Brunei",
+        "arrivals": 1247
+      },
+      {
+        "month": "2022-05",
+        "country_name": "Brunei",
+        "arrivals": 3094
+      },
+      {
+        "month": "2022-06",
+        "country_name": "Brunei",
+        "arrivals": 4165
+      },
+      {
+        "month": "2022-07",
+        "country_name": "Brunei",
+        "arrivals": 10594
+      },
+      {
+        "month": "2022-08",
+        "country_name": "Brunei",
+        "arrivals": 36953
+      },
+      {
+        "month": "2022-09",
+        "country_name": "Brunei",
+        "arrivals": 61332
+      },
+      {
+        "month": "2022-10",
+        "country_name": "Brunei",
+        "arrivals": 64041
+      },
+      {
+        "month": "2022-11",
+        "country_name": "Brunei",
+        "arrivals": 65540
+      },
+      {
+        "month": "2022-12",
+        "country_name": "Brunei",
+        "arrivals": 149927
+      },
+      {
+        "month": "2023-01",
+        "country_name": "Brunei",
+        "arrivals": 93125
+      },
+      {
+        "month": "2023-02",
+        "country_name": "Brunei",
+        "arrivals": 91480
+      },
+      {
+        "month": "2023-03",
+        "country_name": "Brunei",
+        "arrivals": 97143
+      },
+      {
+        "month": "2023-04",
+        "country_name": "Brunei",
+        "arrivals": 122931
+      },
+      {
+        "month": "2023-05",
+        "country_name": "Brunei",
+        "arrivals": 90639
+      },
+      {
+        "month": "2023-06",
+        "country_name": "Brunei",
+        "arrivals": 76368
+      },
+      {
+        "month": "2023-07",
+        "country_name": "Brunei",
+        "arrivals": 85713
+      },
+      {
+        "month": "2023-08",
+        "country_name": "Brunei",
+        "arrivals": 76670
+      },
+      {
+        "month": "2023-09",
+        "country_name": "Brunei",
+        "arrivals": 70708
+      },
+      {
+        "month": "2023-10",
+        "country_name": "Brunei",
+        "arrivals": 64757
+      },
+      {
+        "month": "2023-11",
+        "country_name": "Brunei",
+        "arrivals": 73474
+      },
+      {
+        "month": "2023-12",
+        "country_name": "Brunei",
+        "arrivals": 170217
+      },
+      {
+        "month": "2024-01",
+        "country_name": "Brunei",
+        "arrivals": 125804
+      },
+      {
+        "month": "2024-02",
+        "country_name": "Brunei",
+        "arrivals": 140506
+      },
+      {
+        "month": "2024-03",
+        "country_name": "Brunei",
+        "arrivals": 166490
+      },
+      {
+        "month": "2024-04",
+        "country_name": "Brunei",
+        "arrivals": 168967
+      },
+      {
+        "month": "2024-05",
+        "country_name": "Brunei",
+        "arrivals": 144782
+      },
+      {
+        "month": "2024-06",
+        "country_name": "Brunei",
+        "arrivals": 138729
+      },
+      {
+        "month": "2024-07",
+        "country_name": "Brunei",
+        "arrivals": 150924
+      },
+      {
+        "month": "2024-08",
+        "country_name": "Brunei",
+        "arrivals": 180386
+      },
+      {
+        "month": "2024-09",
+        "country_name": "Brunei",
+        "arrivals": 119475
+      },
+      {
+        "month": "2024-10",
+        "country_name": "Brunei",
+        "arrivals": 99767
+      },
+      {
+        "month": "2020-01",
+        "country_name": "China",
+        "arrivals": 285958
+      },
+      {
+        "month": "2020-02",
+        "country_name": "China",
+        "arrivals": 70865
+      },
+      {
+        "month": "2020-03",
+        "country_name": "China",
+        "arrivals": 31765
+      },
+      {
+        "month": "2020-04",
+        "country_name": "China",
+        "arrivals": 60
+      },
+      {
+        "month": "2020-05",
+        "country_name": "China",
+        "arrivals": 23
+      },
+      {
+        "month": "2020-06",
+        "country_name": "China",
+        "arrivals": 196
+      },
+      {
+        "month": "2020-07",
+        "country_name": "China",
+        "arrivals": 505
+      },
+      {
+        "month": "2020-08",
+        "country_name": "China",
+        "arrivals": 621
+      },
+      {
+        "month": "2020-09",
+        "country_name": "China",
+        "arrivals": 864
+      },
+      {
+        "month": "2020-10",
+        "country_name": "China",
+        "arrivals": 1289
+      },
+      {
+        "month": "2020-11",
+        "country_name": "China",
+        "arrivals": 1633
+      },
+      {
+        "month": "2020-12",
+        "country_name": "China",
+        "arrivals": 1034
+      },
+      {
+        "month": "2021-01",
+        "country_name": "China",
+        "arrivals": 1106
+      },
+      {
+        "month": "2021-02",
+        "country_name": "China",
+        "arrivals": 854
+      },
+      {
+        "month": "2021-03",
+        "country_name": "China",
+        "arrivals": 1887
+      },
+      {
+        "month": "2021-04",
+        "country_name": "China",
+        "arrivals": 1675
+      },
+      {
+        "month": "2021-05",
+        "country_name": "China",
+        "arrivals": 1501
+      },
+      {
+        "month": "2021-06",
+        "country_name": "China",
+        "arrivals": 812
+      },
+      {
+        "month": "2021-07",
+        "country_name": "China",
+        "arrivals": 873
+      },
+      {
+        "month": "2021-08",
+        "country_name": "China",
+        "arrivals": 806
+      },
+      {
+        "month": "2021-09",
+        "country_name": "China",
+        "arrivals": 1084
+      },
+      {
+        "month": "2021-10",
+        "country_name": "China",
+        "arrivals": 1196
+      },
+      {
+        "month": "2021-11",
+        "country_name": "China",
+        "arrivals": 1377
+      },
+      {
+        "month": "2021-12",
+        "country_name": "China",
+        "arrivals": 2384
+      },
+      {
+        "month": "2022-01",
+        "country_name": "China",
+        "arrivals": 2052
+      },
+      {
+        "month": "2022-02",
+        "country_name": "China",
+        "arrivals": 3185
+      },
+      {
+        "month": "2022-03",
+        "country_name": "China",
+        "arrivals": 3412
+      },
+      {
+        "month": "2022-04",
+        "country_name": "China",
+        "arrivals": 9545
+      },
+      {
+        "month": "2022-05",
+        "country_name": "China",
+        "arrivals": 16335
+      },
+      {
+        "month": "2022-06",
+        "country_name": "China",
+        "arrivals": 22784
+      },
+      {
+        "month": "2022-07",
+        "country_name": "China",
+        "arrivals": 30250
+      },
+      {
+        "month": "2022-08",
+        "country_name": "China",
+        "arrivals": 32301
+      },
+      {
+        "month": "2022-09",
+        "country_name": "China",
+        "arrivals": 37902
+      },
+      {
+        "month": "2022-10",
+        "country_name": "China",
+        "arrivals": 41187
+      },
+      {
+        "month": "2022-11",
+        "country_name": "China",
+        "arrivals": 41360
+      },
+      {
+        "month": "2022-12",
+        "country_name": "China",
+        "arrivals": 53998
+      },
+      {
+        "month": "2023-01",
+        "country_name": "China",
+        "arrivals": 57290
+      },
+      {
+        "month": "2023-02",
+        "country_name": "China",
+        "arrivals": 64892
+      },
+      {
+        "month": "2023-03",
+        "country_name": "China",
+        "arrivals": 102774
+      },
+      {
+        "month": "2023-04",
+        "country_name": "China",
+        "arrivals": 124583
+      },
+      {
+        "month": "2023-05",
+        "country_name": "China",
+        "arrivals": 133136
+      },
+      {
+        "month": "2023-06",
+        "country_name": "China",
+        "arrivals": 109815
+      },
+      {
+        "month": "2023-07",
+        "country_name": "China",
+        "arrivals": 212546
+      },
+      {
+        "month": "2023-08",
+        "country_name": "China",
+        "arrivals": 205942
+      },
+      {
+        "month": "2023-09",
+        "country_name": "China",
+        "arrivals": 171971
+      },
+      {
+        "month": "2023-10",
+        "country_name": "China",
+        "arrivals": 158682
+      },
+      {
+        "month": "2023-11",
+        "country_name": "China",
+        "arrivals": 140694
+      },
+      {
+        "month": "2023-12",
+        "country_name": "China",
+        "arrivals": 179394
+      },
+      {
+        "month": "2024-01",
+        "country_name": "China",
+        "arrivals": 228900
+      },
+      {
+        "month": "2024-02",
+        "country_name": "China",
+        "arrivals": 342003
+      },
+      {
+        "month": "2024-03",
+        "country_name": "China",
+        "arrivals": 262826
+      },
+      {
+        "month": "2024-04",
+        "country_name": "China",
+        "arrivals": 228426
+      },
+      {
+        "month": "2024-05",
+        "country_name": "China",
+        "arrivals": 269256
+      },
+      {
+        "month": "2024-06",
+        "country_name": "China",
+        "arrivals": 310204
+      },
+      {
+        "month": "2024-07",
+        "country_name": "China",
+        "arrivals": 462097
+      },
+      {
+        "month": "2024-08",
+        "country_name": "China",
+        "arrivals": 492613
+      },
+      {
+        "month": "2024-09",
+        "country_name": "China",
+        "arrivals": 302655
+      },
+      {
+        "month": "2024-10",
+        "country_name": "China",
+        "arrivals": 312049
+      },
+      {
+        "month": "2020-01",
+        "country_name": "Indonesia",
+        "arrivals": 373952
+      },
+      {
+        "month": "2020-02",
+        "country_name": "Indonesia",
+        "arrivals": 277827
+      },
+      {
+        "month": "2020-03",
+        "country_name": "Indonesia",
+        "arrivals": 131683
+      },
+      {
+        "month": "2020-04",
+        "country_name": "Indonesia",
+        "arrivals": 430
+      },
+      {
+        "month": "2020-05",
+        "country_name": "Indonesia",
+        "arrivals": 234
+      },
+      {
+        "month": "2020-06",
+        "country_name": "Indonesia",
+        "arrivals": 728
+      },
+      {
+        "month": "2020-07",
+        "country_name": "Indonesia",
+        "arrivals": 1742
+      },
+      {
+        "month": "2020-08",
+        "country_name": "Indonesia",
+        "arrivals": 1289
+      },
+      {
+        "month": "2020-09",
+        "country_name": "Indonesia",
+        "arrivals": 1372
+      },
+      {
+        "month": "2020-10",
+        "country_name": "Indonesia",
+        "arrivals": 974
+      },
+      {
+        "month": "2020-11",
+        "country_name": "Indonesia",
+        "arrivals": 964
+      },
+      {
+        "month": "2020-12",
+        "country_name": "Indonesia",
+        "arrivals": 1036
+      },
+      {
+        "month": "2021-01",
+        "country_name": "Indonesia",
+        "arrivals": 1123
+      },
+      {
+        "month": "2021-02",
+        "country_name": "Indonesia",
+        "arrivals": 1229
+      },
+      {
+        "month": "2021-03",
+        "country_name": "Indonesia",
+        "arrivals": 2090
+      },
+      {
+        "month": "2021-04",
+        "country_name": "Indonesia",
+        "arrivals": 1781
+      },
+      {
+        "month": "2021-05",
+        "country_name": "Indonesia",
+        "arrivals": 1331
+      },
+      {
+        "month": "2021-06",
+        "country_name": "Indonesia",
+        "arrivals": 905
+      },
+      {
+        "month": "2021-07",
+        "country_name": "Indonesia",
+        "arrivals": 1126
+      },
+      {
+        "month": "2021-08",
+        "country_name": "Indonesia",
+        "arrivals": 885
+      },
+      {
+        "month": "2021-09",
+        "country_name": "Indonesia",
+        "arrivals": 1197
+      },
+      {
+        "month": "2021-10",
+        "country_name": "Indonesia",
+        "arrivals": 1514
+      },
+      {
+        "month": "2021-11",
+        "country_name": "Indonesia",
+        "arrivals": 2502
+      },
+      {
+        "month": "2021-12",
+        "country_name": "Indonesia",
+        "arrivals": 4365
+      },
+      {
+        "month": "2022-01",
+        "country_name": "Indonesia",
+        "arrivals": 4510
+      },
+      {
+        "month": "2022-02",
+        "country_name": "Indonesia",
+        "arrivals": 3954
+      },
+      {
+        "month": "2022-03",
+        "country_name": "Indonesia",
+        "arrivals": 6511
+      },
+      {
+        "month": "2022-04",
+        "country_name": "Indonesia",
+        "arrivals": 35776
+      },
+      {
+        "month": "2022-05",
+        "country_name": "Indonesia",
+        "arrivals": 109113
+      },
+      {
+        "month": "2022-06",
+        "country_name": "Indonesia",
+        "arrivals": 163265
+      },
+      {
+        "month": "2022-07",
+        "country_name": "Indonesia",
+        "arrivals": 190578
+      },
+      {
+        "month": "2022-08",
+        "country_name": "Indonesia",
+        "arrivals": 211750
+      },
+      {
+        "month": "2022-09",
+        "country_name": "Indonesia",
+        "arrivals": 219069
+      },
+      {
+        "month": "2022-10",
+        "country_name": "Indonesia",
+        "arrivals": 248561
+      },
+      {
+        "month": "2022-11",
+        "country_name": "Indonesia",
+        "arrivals": 252338
+      },
+      {
+        "month": "2022-12",
+        "country_name": "Indonesia",
+        "arrivals": 296613
+      },
+      {
+        "month": "2023-01",
+        "country_name": "Indonesia",
+        "arrivals": 300977
+      },
+      {
+        "month": "2023-02",
+        "country_name": "Indonesia",
+        "arrivals": 266259
+      },
+      {
+        "month": "2023-03",
+        "country_name": "Indonesia",
+        "arrivals": 276253
+      },
+      {
+        "month": "2023-04",
+        "country_name": "Indonesia",
+        "arrivals": 292499
+      },
+      {
+        "month": "2023-05",
+        "country_name": "Indonesia",
+        "arrivals": 326967
+      },
+      {
+        "month": "2023-06",
+        "country_name": "Indonesia",
+        "arrivals": 275647
+      },
+      {
+        "month": "2023-07",
+        "country_name": "Indonesia",
+        "arrivals": 344760
+      },
+      {
+        "month": "2023-08",
+        "country_name": "Indonesia",
+        "arrivals": 295132
+      },
+      {
+        "month": "2023-09",
+        "country_name": "Indonesia",
+        "arrivals": 308884
+      },
+      {
+        "month": "2023-10",
+        "country_name": "Indonesia",
+        "arrivals": 313076
+      },
+      {
+        "month": "2023-11",
+        "country_name": "Indonesia",
+        "arrivals": 330886
+      },
+      {
+        "month": "2023-12",
+        "country_name": "Indonesia",
+        "arrivals": 403481
+      },
+      {
+        "month": "2024-01",
+        "country_name": "Indonesia",
+        "arrivals": 381251
+      },
+      {
+        "month": "2024-02",
+        "country_name": "Indonesia",
+        "arrivals": 333625
+      },
+      {
+        "month": "2024-03",
+        "country_name": "Indonesia",
+        "arrivals": 315885
+      },
+      {
+        "month": "2024-04",
+        "country_name": "Indonesia",
+        "arrivals": 377815
+      },
+      {
+        "month": "2024-05",
+        "country_name": "Indonesia",
+        "arrivals": 374653
+      },
+      {
+        "month": "2024-06",
+        "country_name": "Indonesia",
+        "arrivals": 405489
+      },
+      {
+        "month": "2024-07",
+        "country_name": "Indonesia",
+        "arrivals": 372050
+      },
+      {
+        "month": "2024-08",
+        "country_name": "Indonesia",
+        "arrivals": 352926
+      },
+      {
+        "month": "2024-09",
+        "country_name": "Indonesia",
+        "arrivals": 344094
+      },
+      {
+        "month": "2024-10",
+        "country_name": "Indonesia",
+        "arrivals": 339151
+      },
+      {
+        "month": "2020-01",
+        "country_name": "Singapore",
+        "arrivals": 1265034
+      },
+      {
+        "month": "2020-02",
+        "country_name": "Singapore",
+        "arrivals": 920277
+      },
+      {
+        "month": "2020-03",
+        "country_name": "Singapore",
+        "arrivals": 588391
+      },
+      {
+        "month": "2020-04",
+        "country_name": "Singapore",
+        "arrivals": 97
+      },
+      {
+        "month": "2020-05",
+        "country_name": "Singapore",
+        "arrivals": 80
+      },
+      {
+        "month": "2020-06",
+        "country_name": "Singapore",
+        "arrivals": 150
+      },
+      {
+        "month": "2020-07",
+        "country_name": "Singapore",
+        "arrivals": 350
+      },
+      {
+        "month": "2020-08",
+        "country_name": "Singapore",
+        "arrivals": 514
+      },
+      {
+        "month": "2020-09",
+        "country_name": "Singapore",
+        "arrivals": 881
+      },
+      {
+        "month": "2020-10",
+        "country_name": "Singapore",
+        "arrivals": 861
+      },
+      {
+        "month": "2020-11",
+        "country_name": "Singapore",
+        "arrivals": 740
+      },
+      {
+        "month": "2020-12",
+        "country_name": "Singapore",
+        "arrivals": 446
+      },
+      {
+        "month": "2021-01",
+        "country_name": "Singapore",
+        "arrivals": 439
+      },
+      {
+        "month": "2021-02",
+        "country_name": "Singapore",
+        "arrivals": 391
+      },
+      {
+        "month": "2021-03",
+        "country_name": "Singapore",
+        "arrivals": 493
+      },
+      {
+        "month": "2021-04",
+        "country_name": "Singapore",
+        "arrivals": 442
+      },
+      {
+        "month": "2021-05",
+        "country_name": "Singapore",
+        "arrivals": 273
+      },
+      {
+        "month": "2021-06",
+        "country_name": "Singapore",
+        "arrivals": 167
+      },
+      {
+        "month": "2021-07",
+        "country_name": "Singapore",
+        "arrivals": 195
+      },
+      {
+        "month": "2021-08",
+        "country_name": "Singapore",
+        "arrivals": 208
+      },
+      {
+        "month": "2021-09",
+        "country_name": "Singapore",
+        "arrivals": 236
+      },
+      {
+        "month": "2021-10",
+        "country_name": "Singapore",
+        "arrivals": 388
+      },
+      {
+        "month": "2021-11",
+        "country_name": "Singapore",
+        "arrivals": 1036
+      },
+      {
+        "month": "2021-12",
+        "country_name": "Singapore",
+        "arrivals": 13424
+      },
+      {
+        "month": "2022-01",
+        "country_name": "Singapore",
+        "arrivals": 7584
+      },
+      {
+        "month": "2022-02",
+        "country_name": "Singapore",
+        "arrivals": 6892
+      },
+      {
+        "month": "2022-03",
+        "country_name": "Singapore",
+        "arrivals": 16345
+      },
+      {
+        "month": "2022-04",
+        "country_name": "Singapore",
+        "arrivals": 411851
+      },
+      {
+        "month": "2022-05",
+        "country_name": "Singapore",
+        "arrivals": 650065
+      },
+      {
+        "month": "2022-06",
+        "country_name": "Singapore",
+        "arrivals": 851285
+      },
+      {
+        "month": "2022-07",
+        "country_name": "Singapore",
+        "arrivals": 980310
+      },
+      {
+        "month": "2022-08",
+        "country_name": "Singapore",
+        "arrivals": 974331
+      },
+      {
+        "month": "2022-09",
+        "country_name": "Singapore",
+        "arrivals": 1067137
+      },
+      {
+        "month": "2022-10",
+        "country_name": "Singapore",
+        "arrivals": 1063726
+      },
+      {
+        "month": "2022-11",
+        "country_name": "Singapore",
+        "arrivals": 1092183
+      },
+      {
+        "month": "2022-12",
+        "country_name": "Singapore",
+        "arrivals": 1267322
+      },
+      {
+        "month": "2023-01",
+        "country_name": "Singapore",
+        "arrivals": 1060844
+      },
+      {
+        "month": "2023-02",
+        "country_name": "Singapore",
+        "arrivals": 939633
+      },
+      {
+        "month": "2023-03",
+        "country_name": "Singapore",
+        "arrivals": 1140473
+      },
+      {
+        "month": "2023-04",
+        "country_name": "Singapore",
+        "arrivals": 1041826
+      },
+      {
+        "month": "2023-05",
+        "country_name": "Singapore",
+        "arrivals": 1119412
+      },
+      {
+        "month": "2023-06",
+        "country_name": "Singapore",
+        "arrivals": 1318183
+      },
+      {
+        "month": "2023-07",
+        "country_name": "Singapore",
+        "arrivals": 1295067
+      },
+      {
+        "month": "2023-08",
+        "country_name": "Singapore",
+        "arrivals": 1276080
+      },
+      {
+        "month": "2023-09",
+        "country_name": "Singapore",
+        "arrivals": 1399698
+      },
+      {
+        "month": "2023-10",
+        "country_name": "Singapore",
+        "arrivals": 1355821
+      },
+      {
+        "month": "2023-11",
+        "country_name": "Singapore",
+        "arrivals": 1383199
+      },
+      {
+        "month": "2023-12",
+        "country_name": "Singapore",
+        "arrivals": 1555476
+      },
+      {
+        "month": "2024-01",
+        "country_name": "Singapore",
+        "arrivals": 941748
+      },
+      {
+        "month": "2024-02",
+        "country_name": "Singapore",
+        "arrivals": 1146125
+      },
+      {
+        "month": "2024-03",
+        "country_name": "Singapore",
+        "arrivals": 1626552
+      },
+      {
+        "month": "2024-04",
+        "country_name": "Singapore",
+        "arrivals": 1379469
+      },
+      {
+        "month": "2024-05",
+        "country_name": "Singapore",
+        "arrivals": 1527065
+      },
+      {
+        "month": "2024-06",
+        "country_name": "Singapore",
+        "arrivals": 1805492
+      },
+      {
+        "month": "2024-07",
+        "country_name": "Singapore",
+        "arrivals": 1625457
+      },
+      {
+        "month": "2024-08",
+        "country_name": "Singapore",
+        "arrivals": 1764001
+      },
+      {
+        "month": "2024-09",
+        "country_name": "Singapore",
+        "arrivals": 1673541
+      },
+      {
+        "month": "2024-10",
+        "country_name": "Singapore",
+        "arrivals": 1560379
+      },
+      {
+        "month": "2020-01",
+        "country_name": "Thailand",
+        "arrivals": 165073
+      },
+      {
+        "month": "2020-02",
+        "country_name": "Thailand",
+        "arrivals": 148430
+      },
+      {
+        "month": "2020-03",
+        "country_name": "Thailand",
+        "arrivals": 86177
+      },
+      {
+        "month": "2020-04",
+        "country_name": "Thailand",
+        "arrivals": 13950
+      },
+      {
+        "month": "2020-05",
+        "country_name": "Thailand",
+        "arrivals": 13137
+      },
+      {
+        "month": "2020-06",
+        "country_name": "Thailand",
+        "arrivals": 11904
+      },
+      {
+        "month": "2020-07",
+        "country_name": "Thailand",
+        "arrivals": 12722
+      },
+      {
+        "month": "2020-08",
+        "country_name": "Thailand",
+        "arrivals": 14922
+      },
+      {
+        "month": "2020-09",
+        "country_name": "Thailand",
+        "arrivals": 14738
+      },
+      {
+        "month": "2020-10",
+        "country_name": "Thailand",
+        "arrivals": 15325
+      },
+      {
+        "month": "2020-11",
+        "country_name": "Thailand",
+        "arrivals": 17634
+      },
+      {
+        "month": "2020-12",
+        "country_name": "Thailand",
+        "arrivals": 23324
+      },
+      {
+        "month": "2021-01",
+        "country_name": "Thailand",
+        "arrivals": 27961
+      },
+      {
+        "month": "2021-02",
+        "country_name": "Thailand",
+        "arrivals": 25581
+      },
+      {
+        "month": "2021-03",
+        "country_name": "Thailand",
+        "arrivals": 30565
+      },
+      {
+        "month": "2021-04",
+        "country_name": "Thailand",
+        "arrivals": 26270
+      },
+      {
+        "month": "2021-05",
+        "country_name": "Thailand",
+        "arrivals": 27298
+      },
+      {
+        "month": "2021-06",
+        "country_name": "Thailand",
+        "arrivals": 24622
+      },
+      {
+        "month": "2021-07",
+        "country_name": "Thailand",
+        "arrivals": 24628
+      },
+      {
+        "month": "2021-08",
+        "country_name": "Thailand",
+        "arrivals": 24054
+      },
+      {
+        "month": "2021-09",
+        "country_name": "Thailand",
+        "arrivals": 26849
+      },
+      {
+        "month": "2021-10",
+        "country_name": "Thailand",
+        "arrivals": 27544
+      },
+      {
+        "month": "2021-11",
+        "country_name": "Thailand",
+        "arrivals": 25951
+      },
+      {
+        "month": "2021-12",
+        "country_name": "Thailand",
+        "arrivals": 28042
+      },
+      {
+        "month": "2022-01",
+        "country_name": "Thailand",
+        "arrivals": 28647
+      },
+      {
+        "month": "2022-02",
+        "country_name": "Thailand",
+        "arrivals": 26276
+      },
+      {
+        "month": "2022-03",
+        "country_name": "Thailand",
+        "arrivals": 31127
+      },
+      {
+        "month": "2022-04",
+        "country_name": "Thailand",
+        "arrivals": 33669
+      },
+      {
+        "month": "2022-05",
+        "country_name": "Thailand",
+        "arrivals": 64707
+      },
+      {
+        "month": "2022-06",
+        "country_name": "Thailand",
+        "arrivals": 97628
+      },
+      {
+        "month": "2022-07",
+        "country_name": "Thailand",
+        "arrivals": 129092
+      },
+      {
+        "month": "2022-08",
+        "country_name": "Thailand",
+        "arrivals": 152050
+      },
+      {
+        "month": "2022-09",
+        "country_name": "Thailand",
+        "arrivals": 136382
+      },
+      {
+        "month": "2022-10",
+        "country_name": "Thailand",
+        "arrivals": 185888
+      },
+      {
+        "month": "2022-11",
+        "country_name": "Thailand",
+        "arrivals": 168282
+      },
+      {
+        "month": "2022-12",
+        "country_name": "Thailand",
+        "arrivals": 159886
+      },
+      {
+        "month": "2023-01",
+        "country_name": "Thailand",
+        "arrivals": 190763
+      },
+      {
+        "month": "2023-02",
+        "country_name": "Thailand",
+        "arrivals": 189555
+      },
+      {
+        "month": "2023-03",
+        "country_name": "Thailand",
+        "arrivals": 237093
+      },
+      {
+        "month": "2023-04",
+        "country_name": "Thailand",
+        "arrivals": 195057
+      },
+      {
+        "month": "2023-05",
+        "country_name": "Thailand",
+        "arrivals": 215198
+      },
+      {
+        "month": "2023-06",
+        "country_name": "Thailand",
+        "arrivals": 154219
+      },
+      {
+        "month": "2023-07",
+        "country_name": "Thailand",
+        "arrivals": 210796
+      },
+      {
+        "month": "2023-08",
+        "country_name": "Thailand",
+        "arrivals": 171417
+      },
+      {
+        "month": "2023-09",
+        "country_name": "Thailand",
+        "arrivals": 184150
+      },
+      {
+        "month": "2023-10",
+        "country_name": "Thailand",
+        "arrivals": 227509
+      },
+      {
+        "month": "2023-11",
+        "country_name": "Thailand",
+        "arrivals": 190980
+      },
+      {
+        "month": "2023-12",
+        "country_name": "Thailand",
+        "arrivals": 195485
+      },
+      {
+        "month": "2024-01",
+        "country_name": "Thailand",
+        "arrivals": 210911
+      },
+      {
+        "month": "2024-02",
+        "country_name": "Thailand",
+        "arrivals": 202799
+      },
+      {
+        "month": "2024-03",
+        "country_name": "Thailand",
+        "arrivals": 225012
+      },
+      {
+        "month": "2024-04",
+        "country_name": "Thailand",
+        "arrivals": 193811
+      },
+      {
+        "month": "2024-05",
+        "country_name": "Thailand",
+        "arrivals": 203332
+      },
+      {
+        "month": "2024-06",
+        "country_name": "Thailand",
+        "arrivals": 178996
+      },
+      {
+        "month": "2024-07",
+        "country_name": "Thailand",
+        "arrivals": 189400
+      },
+      {
+        "month": "2024-08",
+        "country_name": "Thailand",
+        "arrivals": 196272
+      },
+      {
+        "month": "2024-09",
+        "country_name": "Thailand",
+        "arrivals": 174799
+      },
+      {
+        "month": "2024-10",
+        "country_name": "Thailand",
+        "arrivals": 187487
+      }
+    ]
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "country_select",
+          "select": {
+            "type": "point",
+            "fields": [
+              "country_name"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "axis": {
+            "title": "Month",
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "labelAngle": -45,
+            "grid": false,
+            "format": "%b %Y"
+          }
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative",
+          "axis": {
+            "title": "Monthly Arrivals",
+            "format": ".2s",
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "grid": false
+          }
+        },
+        "color": {
+          "field": "country_name",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Singapore",
+              "Indonesia",
+              "Thailand",
+              "China",
+              "Brunei"
+            ],
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#009E73",
+              "#CC79A7",
+              "#56B4E9"
+            ]
+          },
+          "legend": {
+            "title": "Country",
+            "orient": "none",
+            "legendX": 0,
+            "legendY": -30,
+            "direction": "horizontal",
+            "columns": 5,
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "labelFont": "DM Sans",
+            "titleFont": "DM Sans"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "country_select",
+            "value": 1
+          },
+          "value": 0.15
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "type": "temporal",
+            "timeUnit": "yearmonth",
+            "title": "Month",
+            "format": "%b %Y"
+          },
+          {
+            "field": "country_name",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "arrivals",
+            "type": "quantitative",
+            "title": "Arrivals",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#a01818",
+        "strokeDash": [
+          3,
+          3
+        ],
+        "strokeWidth": 1.2
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2020-03"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "dy": -60,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#a01818",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2020-03",
+            "label": "Border closure \u2014 near-zero arrivals"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -10,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#0072B2",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2024-06",
+            "arrivals": 1805492,
+            "label": "Singapore leads arrivals"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

@@ -8,6 +8,17 @@
   "layer": [
     {
       "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f0f4f8",
+        "stroke": "#cccccc",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
         "format": {
           "type": "topojson",
@@ -522,7 +533,7 @@
           },
           "legend": {
             "title": "Total Arrivals",
-            "orient": "bottom-right",
+            "orient": "top-left",
             "format": ".2s",
             "titleFontSize": 12,
             "labelFontSize": 11,
@@ -539,7 +550,9 @@
               10000000,
               50000000
             ],
-            "labelExpr": "datum.value >= 1000000 ? (datum.value/1000000) + 'M' : datum.value >= 1000 ? (datum.value/1000) + 'K' : datum.value"
+            "labelExpr": "datum.value >= 1000000 ? (datum.value/1000000) + 'M' : datum.value >= 1000 ? (datum.value/1000) + 'K' : datum.value",
+            "offset": 0,
+            "padding": 4
           }
         },
         "tooltip": [
@@ -563,5 +576,12 @@
     "view": {
       "stroke": "transparent"
     }
-  }
+  },
+  "padding": {
+    "top": 20,
+    "bottom": 20,
+    "left": 20,
+    "right": 20
+  },
+  "autosize": "none"
 }
