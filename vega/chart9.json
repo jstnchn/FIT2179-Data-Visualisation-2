@@ -1,0 +1,241 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 410,
+    "autosize": "fit",
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "right": 8,
+      "bottom": 0
+    },
+    "data": {
+      "values": [
+        {
+          "year": "2017",
+          "inbound": 25948000,
+          "domestic": 73662000,
+          "period": "pre-pandemic"
+        },
+        {
+          "year": "2018",
+          "inbound": 25832000,
+          "domestic": 82741000,
+          "period": "pre-pandemic"
+        },
+        {
+          "year": "2019",
+          "inbound": 26101000,
+          "domestic": 92638000,
+          "period": "pre-pandemic"
+        },
+        {
+          "year": "2020",
+          "inbound": 6172008,
+          "domestic": 38635000,
+          "period": "crash"
+        },
+        {
+          "year": "2021",
+          "inbound": 470559,
+          "domestic": 17451000,
+          "period": "crash"
+        },
+        {
+          "year": "2022",
+          "inbound": 15148512,
+          "domestic": 59217000,
+          "period": "recovery"
+        },
+        {
+          "year": "2023",
+          "inbound": 30515304,
+          "domestic": 78676000,
+          "period": "recovery"
+        },
+        {
+          "year": "2024",
+          "inbound": 31899166,
+          "domestic": 98446000,
+          "period": "recovery"
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 120,
+          "opacity": 0.9
+        },
+        "encoding": {
+          "x": {
+            "field": "inbound",
+            "type": "quantitative",
+            "axis": {
+              "title": "Inbound Tourist Arrivals",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "grid": false,
+              "format": ".2s",
+              "domain": true
+            }
+          },
+          "y": {
+            "field": "domestic",
+            "type": "quantitative",
+            "axis": {
+              "title": "Domestic Visitors",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "grid": false,
+              "format": ".2s",
+              "domain": true
+            }
+          },
+          "color": {
+            "field": "period",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "pre-pandemic",
+                "crash",
+                "recovery"
+              ],
+              "range": [
+                "#1a3d7a",
+                "#cccccc",
+                "#d4820a"
+              ]
+            },
+            "legend": {
+              "title": "Period",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "orient": "bottom"
+            }
+          },
+          "tooltip": [
+            {
+              "field": "year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            {
+              "field": "inbound",
+              "type": "quantitative",
+              "title": "Inbound Arrivals",
+              "format": ","
+            },
+            {
+              "field": "domestic",
+              "type": "quantitative",
+              "title": "Domestic Visitors",
+              "format": ","
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 8,
+          "fontSize": 11,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#333333"
+        },
+        "encoding": {
+          "x": {
+            "field": "inbound",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "domestic",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "year",
+            "type": "ordinal"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 8,
+          "dy": 14,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#a01818"
+        },
+        "transform": [
+          {
+            "filter": "datum.year === '2021'"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "inbound",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "domestic",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "Pandemic low"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 8,
+          "dy": 14,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#d4820a"
+        },
+        "transform": [
+          {
+            "filter": "datum.year === '2024'"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "inbound",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "domestic",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "New peak"
+          }
+        }
+      }
+    ],
+    "config": {
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }

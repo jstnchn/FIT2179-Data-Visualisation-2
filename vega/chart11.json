@@ -1,0 +1,260 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 410,
+    "autosize": "fit",
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "right": 5,
+      "bottom": 0
+    },
+    "data": {
+      "values": [
+        {
+          "year": "2020",
+          "group": "ASEAN",
+          "arrivals": 4528431
+        },
+        {
+          "year": "2020",
+          "group": "Non-ASEAN",
+          "arrivals": 1643577
+        },
+        {
+          "year": "2021",
+          "group": "ASEAN",
+          "arrivals": 373027
+        },
+        {
+          "year": "2021",
+          "group": "Non-ASEAN",
+          "arrivals": 97532
+        },
+        {
+          "year": "2022",
+          "group": "ASEAN",
+          "arrivals": 12311299
+        },
+        {
+          "year": "2022",
+          "group": "Non-ASEAN",
+          "arrivals": 2837213
+        },
+        {
+          "year": "2023",
+          "group": "ASEAN",
+          "arrivals": 23286007
+        },
+        {
+          "year": "2023",
+          "group": "Non-ASEAN",
+          "arrivals": 7229297
+        },
+        {
+          "year": "2024",
+          "group": "ASEAN",
+          "arrivals": 23133806
+        },
+        {
+          "year": "2024",
+          "group": "Non-ASEAN",
+          "arrivals": 8765360
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "cornerRadiusTopLeft": 3,
+          "cornerRadiusTopRight": 3
+        },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "ordinal",
+            "sort": [
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024"
+            ],
+            "axis": {
+              "title": "Year",
+              "titleFont": "DM Sans",
+              "titleFontSize": 12,
+              "labelFont": "DM Sans",
+              "labelFontSize": 11,
+              "labelAngle": 0,
+              "grid": false,
+              "ticks": false,
+              "domain": true
+            }
+          },
+          "y": {
+            "field": "arrivals",
+            "type": "quantitative",
+            "stack": false,
+            "axis": {
+              "title": "Tourist Arrivals",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "grid": false,
+              "domain": true,
+              "format": ".2s",
+              "tickCount": 4
+            }
+          },
+          "color": {
+            "field": "group",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "ASEAN",
+                "Non-ASEAN"
+              ],
+              "range": [
+                "#5c4d8a",
+                "#c45c8a"
+              ]
+            },
+            "legend": {
+              "title": "Origin",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "orient": "bottom"
+            }
+          },
+          "tooltip": [
+            {
+              "field": "year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            {
+              "field": "group",
+              "type": "nominal",
+              "title": "Origin"
+            },
+            {
+              "field": "arrivals",
+              "type": "quantitative",
+              "title": "Arrivals",
+              "format": ","
+            }
+          ],
+          "xOffset": {
+            "field": "group",
+            "type": "nominal",
+            "sort": [
+              "ASEAN",
+              "Non-ASEAN"
+            ]
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "bottom",
+          "dy": -6,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#a01818"
+        },
+        "transform": [
+          {
+            "filter": "datum.group === 'Non-ASEAN'"
+          },
+          {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "arrivals",
+                "as": "total"
+              }
+            ],
+            "groupby": [
+              "year"
+            ]
+          },
+          {
+            "filter": "datum.year === '2021'"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "total",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "Pandemic low"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "bottom",
+          "dx": -90,
+          "dy": -205,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#1a3d7a"
+        },
+        "transform": [
+          {
+            "filter": "datum.group === 'Non-ASEAN'"
+          },
+          {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "arrivals",
+                "as": "total"
+              }
+            ],
+            "groupby": [
+              "year"
+            ]
+          },
+          {
+            "filter": "datum.year === '2024'"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "total",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "ASEAN dominance easing"
+          }
+        }
+      }
+    ],
+    "config": {
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }

@@ -1,0 +1,137 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 410,
+    "autosize": "fit",
+    "padding": {
+        "top": 0,
+        "left": 0,
+        "right": 10,
+        "bottom": 0
+      },
+    "data": {
+      "values": [
+        { "year": "2020", "gender": "Male",   "arrivals": 3591232  },
+        { "year": "2020", "gender": "Female", "arrivals": 2580776  },
+        { "year": "2021", "gender": "Male",   "arrivals": 424712   },
+        { "year": "2021", "gender": "Female", "arrivals": 45847    },
+        { "year": "2022", "gender": "Male",   "arrivals": 8801218  },
+        { "year": "2022", "gender": "Female", "arrivals": 6347294  },
+        { "year": "2023", "gender": "Male",   "arrivals": 16974572 },
+        { "year": "2023", "gender": "Female", "arrivals": 13540732 },
+        { "year": "2024", "gender": "Male",   "arrivals": 17149251 },
+        { "year": "2024", "gender": "Female", "arrivals": 14749915 }
+      ]
+    },
+    "layer": [
+      {
+        "mark": { "type": "line", "color": "#cccccc", "strokeWidth": 2 },
+        "encoding": {
+          "x": {
+            "field": "arrivals",
+            "type": "quantitative",
+            "axis": {
+              "title": "Tourist Arrivals",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "domain": true,
+              "grid": false,
+              "format": ".2s"
+            }
+          },
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "sort": ["2020","2021","2022","2023","2024"],
+            "axis": {
+              "title": "Year",
+              "titleFont": "DM Sans",
+              "titleFontSize": 12,
+              "labelFont": "DM Sans",
+              "labelFontSize": 11,
+              "labelPadding": 10,
+              "domain": true,
+              "grid": false,
+              "ticks": false
+            }
+          },
+          "detail": { "field": "year", "type": "ordinal" }
+        }
+      },
+      {
+        "mark": { "type": "point", "filled": true, "size": 120, "opacity": 1 },
+        "encoding": {
+          "x": { "field": "arrivals", "type": "quantitative" },
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "sort": ["2020","2021","2022","2023","2024"]
+          },
+          "color": {
+            "field": "gender",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Male", "Female"],
+              "range": ["#1a3d7a", "#d4820a"]
+            },
+            "legend": {
+              "title": "Gender",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "orient": "bottom"
+            }
+          },
+          "tooltip": [
+            { "field": "year", "type": "ordinal", "title": "Year" },
+            { "field": "gender", "type": "nominal", "title": "Gender" },
+            { "field": "arrivals", "type": "quantitative", "title": "Arrivals", "format": "," }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": -110,
+          "dy": -15,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#a01818"
+        },
+        "transform": [{ "filter": "datum.year === '2023' && datum.gender === 'Male'" }],
+        "encoding": {
+          "x": { "field": "arrivals", "type": "quantitative" },
+          "y": { "field": "year", "type": "ordinal" },
+          "text": { "value": "Widest gender gap" }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 15,
+          "fontSize": 10,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#555555"
+        },
+        "transform": [{ "filter": "datum.year === '2021' && datum.gender === 'Male'" }],
+        "encoding": {
+          "x": { "field": "arrivals", "type": "quantitative" },
+          "y": { "field": "year", "type": "ordinal" },
+          "text": { "value": "Smallest gender gap" }
+        }
+      }
+    ],
+    "config": {
+      "background": "transparent",
+      "view": { "stroke": "transparent" }
+    }
+  }

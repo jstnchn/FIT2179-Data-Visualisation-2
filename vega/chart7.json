@@ -1,0 +1,293 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 410,
+    "autosize": "fit",
+    "padding": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 20
+    },
+    "data": {
+      "values": [
+        {
+          "year": "2016",
+          "pct": 4.0,
+          "pct_display": 4.0,
+          "truncated": false
+        },
+        {
+          "year": "2017",
+          "pct": -3.0,
+          "pct_display": -3.0,
+          "truncated": false
+        },
+        {
+          "year": "2018",
+          "pct": -0.4,
+          "pct_display": -0.4,
+          "truncated": false
+        },
+        {
+          "year": "2019",
+          "pct": 1.0,
+          "pct_display": 1.0,
+          "truncated": false
+        },
+        {
+          "year": "2020",
+          "pct": -76.4,
+          "pct_display": -76.4,
+          "truncated": false
+        },
+        {
+          "year": "2021",
+          "pct": -92.4,
+          "pct_display": -92.4,
+          "truncated": false
+        },
+        {
+          "year": "2022",
+          "pct": 3119.3,
+          "pct_display": 150,
+          "truncated": true
+        },
+        {
+          "year": "2023",
+          "pct": 101.4,
+          "pct_display": 101.4,
+          "truncated": false
+        },
+        {
+          "year": "2024",
+          "pct": 4.5,
+          "pct_display": 4.5,
+          "truncated": false
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "cornerRadiusEnd": 0
+        },
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "sort": [
+              "2016",
+              "2017",
+              "2018",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024"
+            ],
+            "axis": {
+              "title": "Year",
+              "titleFont": "DM Sans",
+              "titleFontSize": 12,
+              "labelFont": "DM Sans",
+              "labelFontSize": 12,
+              "grid": false,
+              "ticks": false,
+              "domain": true
+            }
+          },
+          "x": {
+            "field": "pct_display",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                -100,
+                150
+              ]
+            },
+            "axis": {
+              "title": "Year-on-Year Change (%)",
+              "titleFont": "DM Sans",
+              "titleFontSize": 12,
+              "labelFont": "DM Sans",
+              "labelFontSize": 11,
+              "grid": false,
+              "format": ".0f",
+              "domain": true
+            }
+          },
+          "color": {
+            "condition": {
+              "test": "datum.pct >= 0",
+              "value": "#a01818"
+            },
+            "value": "#cccccc"
+          },
+          "tooltip": [
+            {
+              "field": "year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            {
+              "field": "pct",
+              "type": "quantitative",
+              "title": "Change (%)",
+              "format": ".1f"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.truncated === true"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 16,
+          "font": "DM Sans",
+          "fontWeight": "bold",
+          "color": "white",
+          "baseline": "middle",
+          "align": "right",
+          "dx": -2
+        },
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "x": {
+            "field": "pct_display",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "\u276f\u276f"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.truncated === true"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 11,
+          "font": "DM Sans",
+          "fontWeight": "bold",
+          "fontStyle": "italic",
+          "color": "#a01818",
+          "baseline": "bottom",
+          "align": "left",
+          "dx": 6,
+          "dy": -2
+        },
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "x": {
+            "field": "pct_display",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "\u2191 3,119%"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.truncated === true"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 11,
+          "font": "DM Sans",
+          "fontStyle": "italic",
+          "color": "#a01818",
+          "baseline": "top",
+          "align": "left",
+          "dx": 6,
+          "dy": 2
+        },
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "x": {
+            "field": "pct_display",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "Borders reopened"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#555555",
+          "strokeWidth": 1
+        },
+        "data": {
+          "values": [
+            {
+              "x": 0
+            }
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "x",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 230,
+          "fontSize": 11,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#555555"
+        },
+        "transform": [
+          {
+            "filter": "datum.year === '2021'"
+          }
+        ],
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "x": {
+            "value": 0
+          },
+          "text": {
+            "value": "Lowest on record: 470,559"
+          }
+        }
+      }
+    ],
+    "config": {
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }

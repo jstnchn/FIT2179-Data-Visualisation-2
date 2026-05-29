@@ -1,0 +1,128 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 410,
+    "autosize": "fit",
+    "padding": 0,
+    "data": {
+      "values": [
+        { "year": "2017", "visitors": 73662000 },
+        { "year": "2018", "visitors": 82741000 },
+        { "year": "2019", "visitors": 92638000 },
+        { "year": "2020", "visitors": 38635000 },
+        { "year": "2021", "visitors": 17451000 },
+        { "year": "2022", "visitors": 59217000 },
+        { "year": "2023", "visitors": 78676000 },
+        { "year": "2024", "visitors": 98446000 }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "line",
+          "interpolate": "step-after",
+          "strokeWidth": 3,
+          "color": "#8b4513"
+        },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "ordinal",
+            "sort": ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+            "axis": {
+              "title": "Year",
+              "titleFont": "DM Sans",
+              "titleFontSize": 12,
+              "labelFont": "DM Sans",
+              "labelFontSize": 11,
+              "labelAngle": -45,
+              "grid": false,
+              "ticks": false,
+              "domain": true
+            }
+          },
+          "y": {
+            "field": "visitors",
+            "type": "quantitative",
+            "axis": {
+              "title": "Domestic Visitors",
+              "titleFont": "DM Sans",
+              "titleFontSize": 11,
+              "labelFont": "DM Sans",
+              "labelFontSize": 10,
+              "grid": false,
+              "format": ".2s",
+              "tickCount": 4,
+              "domain": true
+            }
+          },
+          "tooltip": [
+            { "field": "year", "type": "ordinal", "title": "Year" },
+            { "field": "visitors", "type": "quantitative", "title": "Domestic Visitors", "format": "," }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 80,
+          "color": "#8b4513"
+        },
+        "encoding": {
+          "x": { "field": "year", "type": "ordinal" },
+          "y": { "field": "visitors", "type": "quantitative" },
+          "tooltip": [
+            { "field": "year", "type": "ordinal", "title": "Year" },
+            { "field": "visitors", "type": "quantitative", "title": "Domestic Visitors", "format": "," }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "bottom",
+          "dy": 20,
+          "fontSize": 11,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#a01818"
+        },
+        "transform": [
+          { "filter": "datum.year === '2021'" }
+        ],
+        "encoding": {
+          "x": { "field": "year", "type": "ordinal" },
+          "y": { "field": "visitors", "type": "quantitative" },
+          "text": { "value": "Pandemic low" }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "bottom",
+          "dy": -8,
+          "fontSize": 11,
+          "fontStyle": "italic",
+          "font": "DM Sans",
+          "color": "#8b4513"
+        },
+        "transform": [
+          { "filter": "datum.year === '2024'" }
+        ],
+        "encoding": {
+          "x": { "field": "year", "type": "ordinal" },
+          "y": { "field": "visitors", "type": "quantitative" },
+          "text": { "value": "New peak" }
+        }
+      }
+    ],
+    "config": {
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }

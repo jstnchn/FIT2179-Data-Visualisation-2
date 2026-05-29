@@ -90,37 +90,22 @@ h1, h2, h3, .chart-title, .pull-quote, .stat-num, .stat-num-sm {
   color: var(--text-mute);
 }
 
-/* ── HERO ──
-   Left = col-8, Right = col-4
-   border-right on left block only */
+/* ── HERO ── */
 #hero {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  padding: 24px 20px 28px;
   border-bottom: 2px solid var(--rule);
-}
-
-#hero-left {
-  grid-column: span 8;
-  padding: 20px 20px 20px;
-  border-right: 1px solid var(--border-dark);
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-#hero-right {
-  grid-column: span 4;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background: var(--bg-soft);
+  gap: 0px;
 }
 
 h1 {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(34px, 4.5vw, 58px);
+  font-size: clamp(32px, 6.5vw, 92px);
   font-weight: 700;
   color: var(--text-dark);
-  line-height: 1.05;
+  line-height: 1;
+  letter-spacing: -0.02em;
   white-space: nowrap;
 }
 
@@ -128,36 +113,9 @@ h1 span.gold { color: var(--gold); }
 
 .hero-sub {
   font-family: 'DM Sans', sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 1.45vw, 26px);
   color: var(--text-mid);
   line-height: 1.6;
-}
-
-.hero-stat {
-  padding: 18px 22px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-}
-
-.hero-stat:last-child  { border-bottom: none; }
-.hero-stat:first-child { border-left: 3px solid var(--gold); }
-.hero-stat:last-child  { border-left: 3px solid var(--teal); }
-
-.hero-stat-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 14px;
-}
-
-.stat-num {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--text-dark);
   white-space: nowrap;
 }
 
@@ -168,8 +126,7 @@ h1 span.gold { color: var(--gold); }
   align-items: center;
   padding: 7px 20px;
   border-top: 2px solid var(--rule);
-  border-bottom: 1px solid var(--border-dark);
-  background: var(--bg-soft);
+  background: transparent;
   gap: 10px;
 }
 
@@ -182,14 +139,14 @@ h1 span.gold { color: var(--gold); }
 
 .section-header h2 {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--text-dark);
 }
 
 .section-num {
   font-family: 'DM Sans', sans-serif;
-  font-size: 10.5px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #fff;
@@ -209,7 +166,6 @@ h1 span.gold { color: var(--gold); }
 .grid-21 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border-bottom: 1px solid var(--border);
 }
 
 .grid-21 > .chart-block { grid-column: span 8; }
@@ -219,7 +175,6 @@ h1 span.gold { color: var(--gold); }
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border-bottom: 1px solid var(--border);
 }
 
 .grid-2 > * { grid-column: span 6; }
@@ -229,22 +184,27 @@ h1 span.gold { color: var(--gold); }
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border-bottom: 1px solid var(--border);
 }
 
 .grid-3 > * { grid-column: span 4; }
 .grid-3 > * + * { border-left: 1px solid var(--border); }
 
-/* ── CHART BLOCKS ── */
+/* ── CHART BLOCKS (Now framed as Cards!) ── */
 .chart-block {
   background: var(--bg);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  
+  /* --- NEW FRAME UI --- */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin: 20px; /* Creates perfectly balanced gaps between cards and layout lines */
 }
 
 .chart-header {
-  padding: 10px 20px 8px;
-  border-bottom: 1px solid var(--border);
+  padding: 16px 20px 8px; /* Slightly increased top padding so text doesn't touch the new border */
 }
 
 .chart-title {
@@ -255,8 +215,23 @@ h1 span.gold { color: var(--gold); }
   margin-bottom: 3px;
 }
 
-#chart1 { min-height: 360px; height: 360px; overflow: hidden; }
-#chart4 { min-height: 380px; }
+#chart1 {
+  width: 100%;
+  min-height: 650px;
+  height: 650px;
+  position: relative;
+  display: block;
+}
+
+#chart1 .vega-embed,
+#chart1 .vega-embed canvas,
+#chart1 .vega-embed svg {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+#chart4 { min-height: 520px; }
 #chart2, #chart3, #chart5, #chart6,
 #chart7, #chart8 { min-height: 240px; }
 #chart9, #chart10, #chart11 { min-height: 210px; }
@@ -327,7 +302,6 @@ h1 span.gold { color: var(--gold); }
   color: var(--text-soft);
   line-height: 1.65;
   padding: 10px 20px 14px;
-  border-top: 1px solid var(--border);
   font-style: normal;
   text-align: left;
 }

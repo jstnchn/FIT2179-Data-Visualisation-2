@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "height": 280,
+  "height": 410,
   "autosize": "fit",
   "padding": {
-    "top": 0,
+    "top": 2,
     "bottom": 0,
     "left": 0,
     "right": 20
@@ -182,7 +182,7 @@
           },
           "legend": {
             "title": "Entry Type",
-            "orient": "left",
+            "orient": "bottom",
             "offset": 0,
             "padding": 4,
             "labelFont": "DM Sans",
@@ -219,9 +219,9 @@
     {
       "mark": {
         "type": "text",
-        "align": "left",
-        "dx": 6,
-        "dy": 0,
+        "align": "center",
+        "dx": 0,
+        "dy": -12,
         "fontSize": 11,
         "fontStyle": "italic",
         "font": "DM Sans",

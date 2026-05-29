@@ -1,364 +1,454 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 240,
-    "autosize": "fit",
-    "padding": 0,
-    "data": {
-      "values": [
-        {
-          "year": 1995,
-          "arrivals": 7469000
-        },
-        {
-          "year": 1996,
-          "arrivals": 7138000
-        },
-        {
-          "year": 1997,
-          "arrivals": 6211000
-        },
-        {
-          "year": 1998,
-          "arrivals": 5551000
-        },
-        {
-          "year": 1999,
-          "arrivals": 7931000
-        },
-        {
-          "year": 2000,
-          "arrivals": 10222000
-        },
-        {
-          "year": 2001,
-          "arrivals": 12775000
-        },
-        {
-          "year": 2002,
-          "arrivals": 13292000
-        },
-        {
-          "year": 2003,
-          "arrivals": 10577000
-        },
-        {
-          "year": 2004,
-          "arrivals": 15703000
-        },
-        {
-          "year": 2005,
-          "arrivals": 16431000
-        },
-        {
-          "year": 2006,
-          "arrivals": 17547000
-        },
-        {
-          "year": 2007,
-          "arrivals": 20973000
-        },
-        {
-          "year": 2008,
-          "arrivals": 22052000
-        },
-        {
-          "year": 2009,
-          "arrivals": 23646000
-        },
-        {
-          "year": 2010,
-          "arrivals": 24577000
-        },
-        {
-          "year": 2011,
-          "arrivals": 24714000
-        },
-        {
-          "year": 2012,
-          "arrivals": 25033000
-        },
-        {
-          "year": 2013,
-          "arrivals": 25715000
-        },
-        {
-          "year": 2014,
-          "arrivals": 27437000
-        },
-        {
-          "year": 2015,
-          "arrivals": 25721000
-        },
-        {
-          "year": 2016,
-          "arrivals": 26757000
-        },
-        {
-          "year": 2017,
-          "arrivals": 25948000
-        },
-        {
-          "year": 2018,
-          "arrivals": 25832000
-        },
-        {
-          "year": 2019,
-          "arrivals": 26101000
-        },
-        {
-          "year": 2020,
-          "arrivals": 6172008
-        },
-        {
-          "year": 2021,
-          "arrivals": 470559
-        },
-        {
-          "year": 2022,
-          "arrivals": 15148512
-        },
-        {
-          "year": 2023,
-          "arrivals": 30515304
-        },
-        {
-          "year": 2024,
-          "arrivals": 31899166
-        }
-      ]
-    },
-    "layer": [
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 410,
+  "autosize": "fit",
+  "padding": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 20
+  },
+  "data": {
+    "values": [
       {
-        "mark": {
-          "type": "area",
-          "line": {
-            "color": "#2c3e50",
-            "strokeWidth": 2
-          },
+        "year": 1995,
+        "arrivals": 7469000
+      },
+      {
+        "year": 1996,
+        "arrivals": 7138000
+      },
+      {
+        "year": 1997,
+        "arrivals": 6211000
+      },
+      {
+        "year": 1998,
+        "arrivals": 5551000
+      },
+      {
+        "year": 1999,
+        "arrivals": 7931000
+      },
+      {
+        "year": 2000,
+        "arrivals": 10222000
+      },
+      {
+        "year": 2001,
+        "arrivals": 12775000
+      },
+      {
+        "year": 2002,
+        "arrivals": 13292000
+      },
+      {
+        "year": 2003,
+        "arrivals": 10577000
+      },
+      {
+        "year": 2004,
+        "arrivals": 15703000
+      },
+      {
+        "year": 2005,
+        "arrivals": 16431000
+      },
+      {
+        "year": 2006,
+        "arrivals": 17547000
+      },
+      {
+        "year": 2007,
+        "arrivals": 20973000
+      },
+      {
+        "year": 2008,
+        "arrivals": 22052000
+      },
+      {
+        "year": 2009,
+        "arrivals": 23646000
+      },
+      {
+        "year": 2010,
+        "arrivals": 24577000
+      },
+      {
+        "year": 2011,
+        "arrivals": 24714000
+      },
+      {
+        "year": 2012,
+        "arrivals": 25033000
+      },
+      {
+        "year": 2013,
+        "arrivals": 25715000
+      },
+      {
+        "year": 2014,
+        "arrivals": 27437000
+      },
+      {
+        "year": 2015,
+        "arrivals": 25721000
+      },
+      {
+        "year": 2016,
+        "arrivals": 26757000
+      },
+      {
+        "year": 2017,
+        "arrivals": 25948000
+      },
+      {
+        "year": 2018,
+        "arrivals": 25832000
+      },
+      {
+        "year": 2019,
+        "arrivals": 26101000
+      },
+      {
+        "year": 2020,
+        "arrivals": 6172008
+      },
+      {
+        "year": 2021,
+        "arrivals": 470559
+      },
+      {
+        "year": 2022,
+        "arrivals": 15148512
+      },
+      {
+        "year": 2023,
+        "arrivals": 30515304
+      },
+      {
+        "year": 2024,
+        "arrivals": 31899166
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {
           "color": "#2c3e50",
-          "fillOpacity": 0.12
+          "strokeWidth": 2
         },
-        "encoding": {
-          "x": {
+        "color": "#2c3e50",
+        "fillOpacity": 0.12
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": "Year",
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "labelAngle": -45,
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative",
+          "axis": {
+            "title": "Arrivals",
+            "format": ".2s",
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "grid": false
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 40,
+        "color": "#2c3e50"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
             "field": "year",
             "type": "ordinal",
-            "axis": {
-              "title": "Year",
-              "labelAngle": -45,
-              "labelFontSize": 12,
-              "labelFont": "DM Sans",
-              "grid": false,
-              "domain": true,
-              "ticks": true,
-              "titleFont": "DM Sans",
-              "titleFontSize": 12
-            }
+            "title": "Year"
           },
-          "y": {
+          {
             "field": "arrivals",
             "type": "quantitative",
-            "axis": {
-              "title": "Arrivals",
-              "format": ".2s",
-              "labelFontSize": 12,
-              "titleFontSize": 12,
-              "labelFont": "DM Sans",
-              "titleFont": "DM Sans",
-              "grid": false,
-              "domain": false
-            }
+            "title": "Arrivals",
+            "format": ","
           }
-        }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#777777",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "strokeWidth": 1.2
       },
-      {
-        "mark": {
-          "type": "rule",
-          "color": "#777777",
-          "strokeDash": [
-            4,
-            3
-          ],
-          "strokeWidth": 1.2
-        },
-        "data": {
-          "values": [
-            {
-              "y": 26101000
-            }
-          ]
-        },
-        "encoding": {
-          "y": {
-            "field": "y",
-            "type": "quantitative"
+      "data": {
+        "values": [
+          {
+            "y": 26101000
           }
-        }
+        ]
       },
-      {
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "bottom",
-          "dx": 4,
-          "dy": -12,
-          "fontSize": 11,
-          "fontStyle": "italic",
-          "color": "#777777",
-          "font": "DM Sans"
-        },
-        "data": {
-          "values": [
-            {
-              "year": 2015,
-              "y": 26101000,
-              "label": "2019 pre-COVID baseline: 26.1M"
-            }
-          ]
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "y",
-            "type": "quantitative"
-          },
-          "text": {
-            "field": "label",
-            "type": "nominal"
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "rule",
-          "strokeDash": [
-            3,
-            3
-          ],
-          "strokeWidth": 1.2,
-          "color": "#a01818"
-        },
-        "data": {
-          "values": [
-            {
-              "year": 1997,
-              "label": "Asian Financial Crisis",
-              "arrivals": 6211000
-            },
-            {
-              "year": 2003,
-              "label": "SARS Outbreak",
-              "arrivals": 10577000
-            },
-            {
-              "year": 2020,
-              "label": "Borders Closed",
-              "arrivals": 6172008
-            },
-            {
-              "year": 2022,
-              "label": "Borders Reopened",
-              "arrivals": 15148512
-            }
-          ]
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "bottom",
-          "dx": 6,
-          "fontSize": 10.5,
-          "fontStyle": "italic",
-          "color": "#a01818",
-          "font": "DM Sans",
-          "dy": -20
-        },
-        "data": {
-          "values": [
-            {
-              "year": 1997,
-              "label": "Asian Financial Crisis",
-              "arrivals": 6211000
-            },
-            {
-              "year": 2003,
-              "label": "SARS Outbreak",
-              "arrivals": 10577000
-            },
-            {
-              "year": 2020,
-              "label": "Borders Closed",
-              "arrivals": 6172008
-            },
-            {
-              "year": 2022,
-              "label": "Borders Reopened",
-              "arrivals": 15148512
-            }
-          ]
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "arrivals",
-            "type": "quantitative"
-          },
-          "text": {
-            "field": "label",
-            "type": "nominal"
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "point",
-          "filled": true,
-          "size": 40,
-          "color": "#2c3e50"
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "arrivals",
-            "type": "quantitative"
-          },
-          "tooltip": [
-            {
-              "field": "year",
-              "type": "ordinal",
-              "title": "Year"
-            },
-            {
-              "field": "arrivals",
-              "type": "quantitative",
-              "title": "Arrivals",
-              "format": ","
-            }
-          ]
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
         }
       }
-    ],
-    "config": {
-      "background": "transparent",
-      "view": {
-        "stroke": "transparent"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": -5,
+        "dy": -18,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#777777",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 2014,
+            "y": 26101000,
+            "label": "Pre-COVID baseline: 26.1M"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          3,
+          3
+        ],
+        "strokeWidth": 1.2,
+        "color": "#a01818"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 1997
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 20,
+        "dy": 20,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#a01818",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 1997,
+            "arrivals": 6211000,
+            "label": "Asian Financial Crisis"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          3,
+          3
+        ],
+        "strokeWidth": 1.2,
+        "color": "#a01818"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 2003
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 8,
+        "dy": 0,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#a01818",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 2003,
+            "arrivals": 10577000,
+            "label": "SARS Outbreak"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          3,
+          3
+        ],
+        "strokeWidth": 1.2,
+        "color": "#a01818"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 2020
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -8,
+        "dy": 0,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#a01818",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "arrivals": 6172008,
+            "label": "Borders Closed"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
+  ],
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
   }
+}

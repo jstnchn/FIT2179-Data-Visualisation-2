@@ -1,9 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "height": 240,
+  "height": 410,
   "autosize": "fit",
-  "padding": 0,
+  "padding": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 20
+  },
   "data": {
     "values": [
       {
@@ -1489,7 +1494,7 @@
             "labelFontSize": 12,
             "labelAngle": -45,
             "grid": false,
-            "format": "%b %Y"
+            "format": "%B %Y"
           }
         },
         "y": {
@@ -1526,9 +1531,7 @@
           },
           "legend": {
             "title": "Country",
-            "orient": "none",
-            "legendX": 0,
-            "legendY": -30,
+            "orient": "bottom",
             "direction": "horizontal",
             "columns": 5,
             "labelFontSize": 12,
@@ -1550,7 +1553,7 @@
             "type": "temporal",
             "timeUnit": "yearmonth",
             "title": "Month",
-            "format": "%b %Y"
+            "format": "%B %Y"
           },
           {
             "field": "country_name",
@@ -1596,17 +1599,18 @@
         "type": "text",
         "align": "left",
         "dx": 4,
-        "dy": -60,
+        "dy": -30,
         "fontSize": 11,
         "fontStyle": "italic",
         "color": "#a01818",
-        "font": "DM Sans"
+        "font": "DM Sans",
+        "limit": 200
       },
       "data": {
         "values": [
           {
             "month": "2020-03",
-            "label": "Border closure \u2014 near-zero arrivals"
+            "label": "Border closure"
           }
         ]
       },
@@ -1625,13 +1629,14 @@
     {
       "mark": {
         "type": "text",
-        "align": "left",
-        "dx": 6,
+        "align": "right",
+        "dx": -6,
         "dy": -10,
         "fontSize": 11,
         "fontStyle": "italic",
         "color": "#0072B2",
-        "font": "DM Sans"
+        "font": "DM Sans",
+        "limit": 200
       },
       "data": {
         "values": [
