@@ -15,7 +15,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/seasia.topojson",
+        "url": "https://raw.githubusercontent.com/jstnchn/FIT2179-Data-Visualisation-2/main/data/seasia.topojson",
         "format": {
           "type": "topojson",
           "feature": "regions"
@@ -30,7 +30,7 @@
     },
     {
       "data": {
-        "url": "../data/seasia.topojson",
+        "url": "https://raw.githubusercontent.com/jstnchn/FIT2179-Data-Visualisation-2/main/data/seasia.topojson",
         "format": {
           "type": "topojson",
           "feature": "regions"
@@ -51,70 +51,518 @@
     {
       "data": {
         "values": [
-          { "poe": "Bangunan Sultan Iskandar", "total_arrivals": 17451455, "state": "Johor", "lat": 1.734225, "long": 103.900412, "type": "Land" },
-          { "poe": "Batu Lintang", "total_arrivals": 1, "state": "Sarawak", "lat": 1.018009, "long": 111.556995, "type": "Land" },
-          { "poe": "Biawak", "total_arrivals": 221068, "state": "Sarawak", "lat": 1.629456, "long": 109.691264, "type": "Land" },
-          { "poe": "Bukit Kayu Hitam", "total_arrivals": 1679135, "state": "Kedah", "lat": 6.51158, "long": 100.421534, "type": "Land" },
-          { "poe": "Bunan Gega", "total_arrivals": 63, "state": "Sarawak", "lat": 0.917433, "long": 110.540944, "type": "Land" },
-          { "poe": "Dermaga Bintulu", "total_arrivals": 30, "state": "Sarawak", "lat": 3.178464, "long": 113.039317, "type": "Sea" },
-          { "poe": "Dermaga Kastam Limbang", "total_arrivals": 27, "state": "Sarawak", "lat": 4.753461, "long": 115.00869, "type": "Sea" },
-          { "poe": "Dermaga Kota Kinabalu", "total_arrivals": 347, "state": "Sabah", "lat": 5.991955, "long": 116.092284, "type": "Sea" },
-          { "poe": "Dermaga Labuan", "total_arrivals": 26481, "state": "Labuan", "lat": 5.276138, "long": 115.250237, "type": "Sea" },
-          { "poe": "Dermaga Sandakan", "total_arrivals": 6324, "state": "Sabah", "lat": 5.87818, "long": 118.052441, "type": "Sea" },
-          { "poe": "Dermaga Tanjung Manis", "total_arrivals": 2, "state": "Sarawak", "lat": 2.144077, "long": 111.285419, "type": "Sea" },
-          { "poe": "Dermaga Tawau", "total_arrivals": 92057, "state": "Sabah", "lat": 4.243936, "long": 117.893219, "type": "Sea" },
-          { "poe": "Gelang Patah", "total_arrivals": 8246089, "state": "Johor", "lat": 1.37719, "long": 103.598752, "type": "Land" },
-          { "poe": "ICQ Durian Burung", "total_arrivals": 75732, "state": "Kedah", "lat": 6.470318, "long": 100.708365, "type": "Land" },
-          { "poe": "ICQS Kudat", "total_arrivals": 171, "state": "Sabah", "lat": 6.879539, "long": 116.848088, "type": "Sea" },
-          { "poe": "Jeti Kuah Langkawi", "total_arrivals": 63747, "state": "Kedah", "lat": 6.306484, "long": 99.851107, "type": "Sea" },
-          { "poe": "Jeti Kuala Perlis", "total_arrivals": 620, "state": "Perlis", "lat": 6.398358, "long": 100.140954, "type": "Sea" },
-          { "poe": "Jeti Kukup", "total_arrivals": 197538, "state": "Johor", "lat": 1.325433, "long": 103.442884, "type": "Sea" },
-          { "poe": "Jeti Menumbok", "total_arrivals": 4, "state": "Sabah", "lat": 5.302942, "long": 115.37346, "type": "Sea" },
-          { "poe": "Jeti Pasir Gudang", "total_arrivals": 232450, "state": "Johor", "lat": 1.443378, "long": 103.905418, "type": "Sea" },
-          { "poe": "Jeti Port Dickson", "total_arrivals": 139066, "state": "Negeri Sembilan", "lat": 2.526064, "long": 101.796108, "type": "Sea" },
-          { "poe": "Jeti Tioman", "total_arrivals": 1906, "state": "Pahang", "lat": 2.818878, "long": 104.158009, "type": "Sea" },
-          { "poe": "Kawasan Pelabuhan Sematan", "total_arrivals": 212, "state": "Sarawak", "lat": 1.805358, "long": 109.77706, "type": "Sea" },
-          { "poe": "Kerteh", "total_arrivals": 4, "state": "Terengganu", "lat": 4.505061, "long": 103.443201, "type": "Sea" },
-          { "poe": "LT Batu Berendam", "total_arrivals": 12817, "state": "Melaka", "lat": 2.261781, "long": 102.250845, "type": "Air" },
-          { "poe": "LT Bintulu", "total_arrivals": 1984, "state": "Sarawak", "lat": 3.123793, "long": 113.023891, "type": "Air" },
-          { "poe": "LT Labuan", "total_arrivals": 179, "state": "Labuan", "lat": 5.294663, "long": 115.249315, "type": "Air" },
-          { "poe": "LT Limbang", "total_arrivals": 5, "state": "Sarawak", "lat": 4.809978, "long": 115.007837, "type": "Air" },
-          { "poe": "LT Miri", "total_arrivals": 29209, "state": "Sarawak", "lat": 4.323014, "long": 113.987401, "type": "Air" },
-          { "poe": "LT Sandakan", "total_arrivals": 1928, "state": "Sabah", "lat": 5.89719, "long": 118.061768, "type": "Air" },
-          { "poe": "LT Sibu", "total_arrivals": 5128, "state": "Sarawak", "lat": 2.256185, "long": 111.986208, "type": "Air" },
-          { "poe": "LT Tawau", "total_arrivals": 5890, "state": "Sabah", "lat": 4.313986, "long": 118.11431, "type": "Air" },
-          { "poe": "Lapangan Terbang Antarabangsa Kota Kinabalu", "total_arrivals": 1171932, "state": "Sabah", "lat": 5.922, "long": 116.051, "type": "Air" },
-          { "poe": "Lapangan Terbang Antarabangsa Kuala Lumpur", "total_arrivals": 9337899, "state": "Selangor", "lat": 2.7456, "long": 101.7072, "type": "Air" },
-          { "poe": "Lapangan Terbang Antarabangsa Kuching", "total_arrivals": 531765, "state": "Sarawak", "lat": 1.4847, "long": 110.3471, "type": "Air" },
-          { "poe": "Lapangan Terbang Antarabangsa Langkawi", "total_arrivals": 403507, "state": "Kedah", "lat": 6.3297, "long": 99.7281, "type": "Air" },
-          { "poe": "Lapangan Terbang Antarabangsa Penang", "total_arrivals": 1614591, "state": "Pulau Pinang", "lat": 5.2977, "long": 100.2769, "type": "Air" },
-          { "poe": "Lapangan Terbang Sultan Abdul Aziz Shah", "total_arrivals": 44027, "state": "Selangor", "lat": 3.1306, "long": 101.5493, "type": "Air" },
-          { "poe": "Pelabuhan Klang Selatan - Jeti", "total_arrivals": 8905, "state": "Selangor", "lat": 2.998438, "long": 101.391943, "type": "Sea" },
-          { "poe": "Pelabuhan Klang Utara", "total_arrivals": 12522, "state": "Selangor", "lat": 3.032807, "long": 101.360728, "type": "Sea" },
-          { "poe": "Pelabuhan Kuantan", "total_arrivals": 379, "state": "Pahang", "lat": 3.966533, "long": 103.420655, "type": "Sea" },
-          { "poe": "Pelabuhan Kuching", "total_arrivals": 203, "state": "Sarawak", "lat": 1.554905, "long": 110.397063, "type": "Sea" },
-          { "poe": "Pelabuhan Melaka", "total_arrivals": 98425, "state": "Melaka", "lat": 2.191919, "long": 102.244812, "type": "Sea" },
-          { "poe": "Pelabuhan Tanjung Pelepas", "total_arrivals": 12135, "state": "Johor", "lat": 1.368093, "long": 103.552368, "type": "Sea" },
-          { "poe": "Pengkalan Hulu (Bukit Berapit)", "total_arrivals": 223056, "state": "Perak", "lat": 5.744794, "long": 101.024478, "type": "Land" },
-          { "poe": "Pengkalan Kubur", "total_arrivals": 129361, "state": "Kelantan", "lat": 6.23291, "long": 102.090991, "type": "Sea" },
-          { "poe": "Pos Imigresen Bukit Bunga", "total_arrivals": 184188, "state": "Kelantan", "lat": 5.837093, "long": 101.894862, "type": "Land" },
-          { "poe": "Pos Imigresen Mengkalap", "total_arrivals": 375624, "state": "Sarawak", "lat": 4.788288, "long": 115.23883, "type": "Land" },
-          { "poe": "Pos Kawalan Imigresen Muar", "total_arrivals": 165364, "state": "Johor", "lat": 2.06091, "long": 102.575061, "type": "Sea" },
-          { "poe": "Rantau Panjang", "total_arrivals": 476973, "state": "Kelantan", "lat": 6.021019, "long": 101.976712, "type": "Land" },
-          { "poe": "Roro Labuan", "total_arrivals": 5881, "state": "Labuan", "lat": 5.276936, "long": 115.242751, "type": "Sea" },
-          { "poe": "Sebana Resort Desaru", "total_arrivals": 7, "state": "Johor", "lat": 1.41266, "long": 104.164799, "type": "Sea" },
-          { "poe": "Sindumin", "total_arrivals": 26, "state": "Sabah", "lat": 4.9585, "long": 115.505825, "type": "Land" },
-          { "poe": "Stulang Laut", "total_arrivals": 497780, "state": "Johor", "lat": 1.470422, "long": 103.78309, "type": "Sea" },
-          { "poe": "Sungai Tujuh", "total_arrivals": 739512, "state": "Sarawak", "lat": 4.584325, "long": 114.074793, "type": "Land" },
-          { "poe": "Tanjung Belungkor", "total_arrivals": 2847, "state": "Johor", "lat": 1.445706, "long": 104.062527, "type": "Sea" },
-          { "poe": "Tanjung Lembung", "total_arrivals": 104, "state": "Kedah", "lat": 6.292877, "long": 99.786682, "type": "Sea" },
-          { "poe": "Tanjung Pengelih", "total_arrivals": 52203, "state": "Johor", "lat": 1.369704, "long": 104.088742, "type": "Sea" },
-          { "poe": "Tebedu", "total_arrivals": 349193, "state": "Sarawak", "lat": 0.987882, "long": 110.353034, "type": "Land" },
-          { "poe": "Tedungan", "total_arrivals": 241771, "state": "Sarawak", "lat": 4.737706, "long": 114.811735, "type": "Land" },
-          { "poe": "Telaga Harbour Park", "total_arrivals": 32344, "state": "Kedah", "lat": 6.367519, "long": 99.686475, "type": "Sea" },
-          { "poe": "Terminal Feri Minyak Beku", "total_arrivals": 16922, "state": "Johor", "lat": 1.798297, "long": 102.894502, "type": "Sea" },
-          { "poe": "Terminal Feri Puteri Harbour", "total_arrivals": 220976, "state": "Johor", "lat": 1.414545, "long": 103.660297, "type": "Sea" },
-          { "poe": "Wang Kelian", "total_arrivals": 124659, "state": "Perlis", "lat": 6.696276, "long": 100.179432, "type": "Land" }
+          {
+            "poe": "Bangunan Sultan Iskandar",
+            "total_arrivals": 17451455,
+            "state": "Johor",
+            "lat": 1.734225,
+            "long": 103.900412,
+            "type": "Land"
+          },
+          {
+            "poe": "Batu Lintang",
+            "total_arrivals": 1,
+            "state": "Sarawak",
+            "lat": 1.018009,
+            "long": 111.556995,
+            "type": "Land"
+          },
+          {
+            "poe": "Biawak",
+            "total_arrivals": 221068,
+            "state": "Sarawak",
+            "lat": 1.629456,
+            "long": 109.691264,
+            "type": "Land"
+          },
+          {
+            "poe": "Bukit Kayu Hitam",
+            "total_arrivals": 1679135,
+            "state": "Kedah",
+            "lat": 6.51158,
+            "long": 100.421534,
+            "type": "Land"
+          },
+          {
+            "poe": "Bunan Gega",
+            "total_arrivals": 63,
+            "state": "Sarawak",
+            "lat": 0.917433,
+            "long": 110.540944,
+            "type": "Land"
+          },
+          {
+            "poe": "Dermaga Bintulu",
+            "total_arrivals": 30,
+            "state": "Sarawak",
+            "lat": 3.178464,
+            "long": 113.039317,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Kastam Limbang",
+            "total_arrivals": 27,
+            "state": "Sarawak",
+            "lat": 4.753461,
+            "long": 115.00869,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Kota Kinabalu",
+            "total_arrivals": 347,
+            "state": "Sabah",
+            "lat": 5.991955,
+            "long": 116.092284,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Labuan",
+            "total_arrivals": 26481,
+            "state": "Labuan",
+            "lat": 5.276138,
+            "long": 115.250237,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Sandakan",
+            "total_arrivals": 6324,
+            "state": "Sabah",
+            "lat": 5.87818,
+            "long": 118.052441,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Tanjung Manis",
+            "total_arrivals": 2,
+            "state": "Sarawak",
+            "lat": 2.144077,
+            "long": 111.285419,
+            "type": "Sea"
+          },
+          {
+            "poe": "Dermaga Tawau",
+            "total_arrivals": 92057,
+            "state": "Sabah",
+            "lat": 4.243936,
+            "long": 117.893219,
+            "type": "Sea"
+          },
+          {
+            "poe": "Gelang Patah",
+            "total_arrivals": 8246089,
+            "state": "Johor",
+            "lat": 1.37719,
+            "long": 103.598752,
+            "type": "Land"
+          },
+          {
+            "poe": "ICQ Durian Burung",
+            "total_arrivals": 75732,
+            "state": "Kedah",
+            "lat": 6.470318,
+            "long": 100.708365,
+            "type": "Land"
+          },
+          {
+            "poe": "ICQS Kudat",
+            "total_arrivals": 171,
+            "state": "Sabah",
+            "lat": 6.879539,
+            "long": 116.848088,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Kuah Langkawi",
+            "total_arrivals": 63747,
+            "state": "Kedah",
+            "lat": 6.306484,
+            "long": 99.851107,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Kuala Perlis",
+            "total_arrivals": 620,
+            "state": "Perlis",
+            "lat": 6.398358,
+            "long": 100.140954,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Kukup",
+            "total_arrivals": 197538,
+            "state": "Johor",
+            "lat": 1.325433,
+            "long": 103.442884,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Menumbok",
+            "total_arrivals": 4,
+            "state": "Sabah",
+            "lat": 5.302942,
+            "long": 115.37346,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Pasir Gudang",
+            "total_arrivals": 232450,
+            "state": "Johor",
+            "lat": 1.443378,
+            "long": 103.905418,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Port Dickson",
+            "total_arrivals": 139066,
+            "state": "Negeri Sembilan",
+            "lat": 2.526064,
+            "long": 101.796108,
+            "type": "Sea"
+          },
+          {
+            "poe": "Jeti Tioman",
+            "total_arrivals": 1906,
+            "state": "Pahang",
+            "lat": 2.818878,
+            "long": 104.158009,
+            "type": "Sea"
+          },
+          {
+            "poe": "Kawasan Pelabuhan Sematan",
+            "total_arrivals": 212,
+            "state": "Sarawak",
+            "lat": 1.805358,
+            "long": 109.77706,
+            "type": "Sea"
+          },
+          {
+            "poe": "Kerteh",
+            "total_arrivals": 4,
+            "state": "Terengganu",
+            "lat": 4.505061,
+            "long": 103.443201,
+            "type": "Sea"
+          },
+          {
+            "poe": "LT Batu Berendam",
+            "total_arrivals": 12817,
+            "state": "Melaka",
+            "lat": 2.261781,
+            "long": 102.250845,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Bintulu",
+            "total_arrivals": 1984,
+            "state": "Sarawak",
+            "lat": 3.123793,
+            "long": 113.023891,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Labuan",
+            "total_arrivals": 179,
+            "state": "Labuan",
+            "lat": 5.294663,
+            "long": 115.249315,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Limbang",
+            "total_arrivals": 5,
+            "state": "Sarawak",
+            "lat": 4.809978,
+            "long": 115.007837,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Miri",
+            "total_arrivals": 29209,
+            "state": "Sarawak",
+            "lat": 4.323014,
+            "long": 113.987401,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Sandakan",
+            "total_arrivals": 1928,
+            "state": "Sabah",
+            "lat": 5.89719,
+            "long": 118.061768,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Sibu",
+            "total_arrivals": 5128,
+            "state": "Sarawak",
+            "lat": 2.256185,
+            "long": 111.986208,
+            "type": "Air"
+          },
+          {
+            "poe": "LT Tawau",
+            "total_arrivals": 5890,
+            "state": "Sabah",
+            "lat": 4.313986,
+            "long": 118.11431,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Antarabangsa Kota Kinabalu",
+            "total_arrivals": 1171932,
+            "state": "Sabah",
+            "lat": 5.922,
+            "long": 116.051,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Antarabangsa Kuala Lumpur",
+            "total_arrivals": 9337899,
+            "state": "Selangor",
+            "lat": 2.7456,
+            "long": 101.7072,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Antarabangsa Kuching",
+            "total_arrivals": 531765,
+            "state": "Sarawak",
+            "lat": 1.4847,
+            "long": 110.3471,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Antarabangsa Langkawi",
+            "total_arrivals": 403507,
+            "state": "Kedah",
+            "lat": 6.3297,
+            "long": 99.7281,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Antarabangsa Penang",
+            "total_arrivals": 1614591,
+            "state": "Pulau Pinang",
+            "lat": 5.2977,
+            "long": 100.2769,
+            "type": "Air"
+          },
+          {
+            "poe": "Lapangan Terbang Sultan Abdul Aziz Shah",
+            "total_arrivals": 44027,
+            "state": "Selangor",
+            "lat": 3.1306,
+            "long": 101.5493,
+            "type": "Air"
+          },
+          {
+            "poe": "Pelabuhan Klang Selatan - Jeti",
+            "total_arrivals": 8905,
+            "state": "Selangor",
+            "lat": 2.998438,
+            "long": 101.391943,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pelabuhan Klang Utara",
+            "total_arrivals": 12522,
+            "state": "Selangor",
+            "lat": 3.032807,
+            "long": 101.360728,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pelabuhan Kuantan",
+            "total_arrivals": 379,
+            "state": "Pahang",
+            "lat": 3.966533,
+            "long": 103.420655,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pelabuhan Kuching",
+            "total_arrivals": 203,
+            "state": "Sarawak",
+            "lat": 1.554905,
+            "long": 110.397063,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pelabuhan Melaka",
+            "total_arrivals": 98425,
+            "state": "Melaka",
+            "lat": 2.191919,
+            "long": 102.244812,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pelabuhan Tanjung Pelepas",
+            "total_arrivals": 12135,
+            "state": "Johor",
+            "lat": 1.368093,
+            "long": 103.552368,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pengkalan Hulu (Bukit Berapit)",
+            "total_arrivals": 223056,
+            "state": "Perak",
+            "lat": 5.744794,
+            "long": 101.024478,
+            "type": "Land"
+          },
+          {
+            "poe": "Pengkalan Kubur",
+            "total_arrivals": 129361,
+            "state": "Kelantan",
+            "lat": 6.23291,
+            "long": 102.090991,
+            "type": "Sea"
+          },
+          {
+            "poe": "Pos Imigresen Bukit Bunga",
+            "total_arrivals": 184188,
+            "state": "Kelantan",
+            "lat": 5.837093,
+            "long": 101.894862,
+            "type": "Land"
+          },
+          {
+            "poe": "Pos Imigresen Mengkalap",
+            "total_arrivals": 375624,
+            "state": "Sarawak",
+            "lat": 4.788288,
+            "long": 115.23883,
+            "type": "Land"
+          },
+          {
+            "poe": "Pos Kawalan Imigresen Muar",
+            "total_arrivals": 165364,
+            "state": "Johor",
+            "lat": 2.06091,
+            "long": 102.575061,
+            "type": "Sea"
+          },
+          {
+            "poe": "Rantau Panjang",
+            "total_arrivals": 476973,
+            "state": "Kelantan",
+            "lat": 6.021019,
+            "long": 101.976712,
+            "type": "Land"
+          },
+          {
+            "poe": "Roro Labuan",
+            "total_arrivals": 5881,
+            "state": "Labuan",
+            "lat": 5.276936,
+            "long": 115.242751,
+            "type": "Sea"
+          },
+          {
+            "poe": "Sebana Resort Desaru",
+            "total_arrivals": 7,
+            "state": "Johor",
+            "lat": 1.41266,
+            "long": 104.164799,
+            "type": "Sea"
+          },
+          {
+            "poe": "Sindumin",
+            "total_arrivals": 26,
+            "state": "Sabah",
+            "lat": 4.9585,
+            "long": 115.505825,
+            "type": "Land"
+          },
+          {
+            "poe": "Stulang Laut",
+            "total_arrivals": 497780,
+            "state": "Johor",
+            "lat": 1.470422,
+            "long": 103.78309,
+            "type": "Sea"
+          },
+          {
+            "poe": "Sungai Tujuh",
+            "total_arrivals": 739512,
+            "state": "Sarawak",
+            "lat": 4.584325,
+            "long": 114.074793,
+            "type": "Land"
+          },
+          {
+            "poe": "Tanjung Belungkor",
+            "total_arrivals": 2847,
+            "state": "Johor",
+            "lat": 1.445706,
+            "long": 104.062527,
+            "type": "Sea"
+          },
+          {
+            "poe": "Tanjung Lembung",
+            "total_arrivals": 104,
+            "state": "Kedah",
+            "lat": 6.292877,
+            "long": 99.786682,
+            "type": "Sea"
+          },
+          {
+            "poe": "Tanjung Pengelih",
+            "total_arrivals": 52203,
+            "state": "Johor",
+            "lat": 1.369704,
+            "long": 104.088742,
+            "type": "Sea"
+          },
+          {
+            "poe": "Tebedu",
+            "total_arrivals": 349193,
+            "state": "Sarawak",
+            "lat": 0.987882,
+            "long": 110.353034,
+            "type": "Land"
+          },
+          {
+            "poe": "Tedungan",
+            "total_arrivals": 241771,
+            "state": "Sarawak",
+            "lat": 4.737706,
+            "long": 114.811735,
+            "type": "Land"
+          },
+          {
+            "poe": "Telaga Harbour Park",
+            "total_arrivals": 32344,
+            "state": "Kedah",
+            "lat": 6.367519,
+            "long": 99.686475,
+            "type": "Sea"
+          },
+          {
+            "poe": "Terminal Feri Minyak Beku",
+            "total_arrivals": 16922,
+            "state": "Johor",
+            "lat": 1.798297,
+            "long": 102.894502,
+            "type": "Sea"
+          },
+          {
+            "poe": "Terminal Feri Puteri Harbour",
+            "total_arrivals": 220976,
+            "state": "Johor",
+            "lat": 1.414545,
+            "long": 103.660297,
+            "type": "Sea"
+          },
+          {
+            "poe": "Wang Kelian",
+            "total_arrivals": 124659,
+            "state": "Perlis",
+            "lat": 6.696276,
+            "long": 100.179432,
+            "type": "Land"
+          }
         ]
       },
       "mark": {
@@ -136,8 +584,18 @@
           "field": "total_arrivals",
           "type": "quantitative",
           "scale": {
-            "domain": [0, 5000000, 10000000, 17500000],
-            "range": [50, 300, 550, 750]
+            "domain": [
+              0,
+              5000000,
+              10000000,
+              17500000
+            ],
+            "range": [
+              50,
+              300,
+              550,
+              750
+            ]
           },
           "legend": {
             "title": "Total Arrivals",
@@ -145,7 +603,12 @@
             "direction": "horizontal",
             "offset": 0,
             "padding": 4,
-            "values": [0, 5000000, 10000000, 15000000],
+            "values": [
+              0,
+              5000000,
+              10000000,
+              15000000
+            ],
             "labelExpr": "datum.value == 0 ? '0' : datum.value == 5000000 ? '5M' : datum.value == 10000000 ? '10M' : '>15M'",
             "labelFontSize": 15,
             "titleFontSize": 12,
@@ -157,35 +620,92 @@
           "field": "type",
           "type": "nominal",
           "scale": {
-            "domain": ["Land", "Air", "Sea"],
-            "range": ["#E69F00", "#0072B2", "#009E73"]
+            "domain": [
+              "Land",
+              "Air",
+              "Sea"
+            ],
+            "range": [
+              "#E69F00",
+              "#0072B2",
+              "#009E73"
+            ]
           },
           "legend": {
             "title": "Entry Type",
             "orient": "bottom-left",
-            "direction": "horizontal",
             "offset": 0,
             "padding": 4,
             "labelFontSize": 12,
             "titleFontSize": 12,
             "labelFont": "DM Sans",
-            "titleFont": "DM Sans"
+            "titleFont": "DM Sans",
+            "direction": "horizontal"
           }
         },
         "tooltip": [
-          { "field": "poe", "type": "nominal", "title": "Point of Entry" },
-          { "field": "state", "type": "nominal", "title": "State" },
-          { "field": "type", "type": "nominal", "title": "Entry Type" },
-          { "field": "total_arrivals", "type": "quantitative", "title": "Total Arrivals (2020–2023)", "format": "," }
+          {
+            "field": "poe",
+            "type": "nominal",
+            "title": "Point of Entry"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "type",
+            "type": "nominal",
+            "title": "Entry Type"
+          },
+          {
+            "field": "total_arrivals",
+            "type": "quantitative",
+            "title": "Total Arrivals (2020–2023)",
+            "format": ","
+          }
         ]
       }
     },
     {
       "data": {
         "values": [
-          { "label": "KLIA and Johor land crossings dominate.", "lon": 103.5, "lat": 3.3 },
-          { "label": "84 official points of entry by air, land, and sea.", "lon": 107.2, "lat": 6 },
-          { "label": ">50% of arrivals enter by land.", "lon": 104.3, "lat": 1.8 }
+          {
+            "label": "KLIA and Johor land crossings dominate.",
+            "lon": 103.5,
+            "lat": 3.3
+          },
+          {
+            "label": "84 official points of entry by air, land, and sea.",
+            "lon": 107.2,
+            "lat": 6
+          },
+          {
+            "label": ">50% of arrivals enter by land.",
+            "lon": 104.3,
+            "lat": 1.8
+          },
+          {
+            "label": "Northern crossings link Malaysia to Thailand",
+            "lon": 102,
+            "lat": 6.8
+          },
+          {
+            "label": "via Perak, Kedah, Perlis, and Kelantan.",
+            "lon": 102,
+            "lat": 6.6
+          },
+          {
+            "label": "East Malaysia's entry points are spread",
+            "lon": 108.9,
+            "lat": 4
+          },
+          {
+            "label": "across Sabah and Sarawak's long coastline.",
+            "lon": 108.9,
+            "lat": 3.8
+          }
         ]
       },
       "mark": {
@@ -197,9 +717,18 @@
         "color": "#333333"
       },
       "encoding": {
-        "longitude": { "field": "lon", "type": "quantitative" },
-        "latitude": { "field": "lat", "type": "quantitative" },
-        "text": { "field": "label", "type": "nominal" }
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],

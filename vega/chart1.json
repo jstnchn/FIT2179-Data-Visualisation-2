@@ -141,7 +141,7 @@
           "scale": {"type": "log", "scheme": "oranges", "domain": [100, 7000000]},
           "legend": {
             "title": "Arrivals per Million (log)",
-            "orient": "top-left",
+            "orient": "bottom-left",
             "offset": 0,
             "format": ".2s",
             "titleFontSize": 12,
@@ -206,9 +206,9 @@
   "config": {"background": "transparent", "view": {"stroke": "transparent"}},
   "padding": {
     "top": 0,
-    "bottom": 0,
-    "left": 0,
-    "right": 35
+    "bottom": 10,
+    "left": 35,
+    "right": 40
   },
   "autosize": {"type": "fit", "contains": "padding"}
 }

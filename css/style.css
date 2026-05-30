@@ -178,7 +178,6 @@ h1 span.gold { color: var(--gold); }
 }
 
 .grid-2 > * { grid-column: span 6; }
-.grid-2 > * + * { border-left: 1px solid var(--border); }
 
 /* 1fr 1fr 1fr = 4 + 4 + 4 */
 .grid-3 {
@@ -187,24 +186,21 @@ h1 span.gold { color: var(--gold); }
 }
 
 .grid-3 > * { grid-column: span 4; }
-.grid-3 > * + * { border-left: 1px solid var(--border); }
 
-/* ── CHART BLOCKS (Now framed as Cards!) ── */
+/* ── CHART BLOCKS & FRAMES ── */
 .chart-block {
-  background: var(--bg);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  
-  /* --- NEW FRAME UI --- */
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  margin: 20px; /* Creates perfectly balanced gaps between cards and layout lines */
+  margin: 20px;
 }
 
+/* Apply the top half of the frame to the header */
 .chart-header {
-  padding: 16px 20px 8px; /* Slightly increased top padding so text doesn't touch the new border */
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 16px 20px 8px;
 }
 
 .chart-title {
@@ -213,6 +209,16 @@ h1 span.gold { color: var(--gold); }
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3px;
+}
+
+/* Apply the bottom half of the frame specifically to the chart containers */
+.chart-block > div[id^="chart"] {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
 }
 
 #chart1 {
@@ -231,6 +237,7 @@ h1 span.gold { color: var(--gold); }
   height: 100% !important;
   position: relative !important;
 }
+
 #chart4 { min-height: 520px; }
 #chart2, #chart3, #chart5, #chart6,
 #chart7, #chart8 { min-height: 240px; }
@@ -301,7 +308,7 @@ h1 span.gold { color: var(--gold); }
   font-size: 14px;
   color: var(--text-soft);
   line-height: 1.65;
-  padding: 10px 20px 14px;
+  padding: 14px 4px 0px; 
   font-style: normal;
   text-align: left;
 }
