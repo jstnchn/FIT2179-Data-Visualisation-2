@@ -172,6 +172,13 @@
             "labelFontSize": 11,
             "orient": "bottom"
           }
+        },
+        "opacity": {
+          "condition": {
+            "param": "country_select",
+            "value": 1
+          },
+          "value": 0.1
         }
       }
     },
@@ -251,6 +258,13 @@
         "color": {
           "field": "country",
           "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "param": "country_select",
+            "value": 1
+          },
+          "value": 0.1
         }
       }
     },
