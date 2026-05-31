@@ -3,38 +3,943 @@
   "width": "container",
   "height": 410,
   "autosize": "fit",
-  "padding": {"top": 0,"bottom": 0,"left": 0,"right": 20},
-  "data": {"values": [
-    {"month":"2020-01","type":"Air","arrivals":989752},{"month":"2020-01","type":"Land","arrivals":1784148},{"month":"2020-01","type":"Sea","arrivals":149153},{"month":"2020-02","type":"Air","arrivals":645444},{"month":"2020-02","type":"Land","arrivals":1225913},{"month":"2020-02","type":"Sea","arrivals":125965},{"month":"2020-03","type":"Air","arrivals":250669},{"month":"2020-03","type":"Land","arrivals":743686},{"month":"2020-03","type":"Sea","arrivals":70684},{"month":"2020-04","type":"Air","arrivals":427},{"month":"2020-04","type":"Land","arrivals":14523},{"month":"2020-04","type":"Sea","arrivals":127},{"month":"2020-05","type":"Air","arrivals":633},{"month":"2020-05","type":"Land","arrivals":13571},{"month":"2020-05","type":"Sea","arrivals":78},{"month":"2020-06","type":"Air","arrivals":1269},{"month":"2020-06","type":"Land","arrivals":12927},{"month":"2020-06","type":"Sea","arrivals":204},{"month":"2020-07","type":"Air","arrivals":5693},{"month":"2020-07","type":"Land","arrivals":14128},{"month":"2020-07","type":"Sea","arrivals":524},{"month":"2020-08","type":"Air","arrivals":5962},{"month":"2020-08","type":"Land","arrivals":15959},{"month":"2020-08","type":"Sea","arrivals":308},{"month":"2020-09","type":"Air","arrivals":5975},{"month":"2020-09","type":"Land","arrivals":16171},{"month":"2020-09","type":"Sea","arrivals":496},{"month":"2020-10","type":"Air","arrivals":5768},{"month":"2020-10","type":"Land","arrivals":16550},{"month":"2020-10","type":"Sea","arrivals":431},{"month":"2020-11","type":"Air","arrivals":5744},{"month":"2020-11","type":"Land","arrivals":18886},{"month":"2020-11","type":"Sea","arrivals":343},{"month":"2020-12","type":"Air","arrivals":5142},{"month":"2020-12","type":"Land","arrivals":24345},{"month":"2020-12","type":"Sea","arrivals":410},{"month":"2021-01","type":"Air","arrivals":6478},{"month":"2021-01","type":"Land","arrivals":29012},{"month":"2021-01","type":"Sea","arrivals":377},{"month":"2021-02","type":"Air","arrivals":6190},{"month":"2021-02","type":"Land","arrivals":26520},{"month":"2021-02","type":"Sea","arrivals":599},{"month":"2021-03","type":"Air","arrivals":10261},{"month":"2021-03","type":"Land","arrivals":31603},{"month":"2021-03","type":"Sea","arrivals":570},{"month":"2021-04","type":"Air","arrivals":10041},{"month":"2021-04","type":"Land","arrivals":27238},{"month":"2021-04","type":"Sea","arrivals":601},{"month":"2021-05","type":"Air","arrivals":7253},{"month":"2021-05","type":"Land","arrivals":27878},{"month":"2021-05","type":"Sea","arrivals":303},{"month":"2021-06","type":"Air","arrivals":4626},{"month":"2021-06","type":"Land","arrivals":24900},{"month":"2021-06","type":"Sea","arrivals":81},{"month":"2021-07","type":"Air","arrivals":5883},{"month":"2021-07","type":"Land","arrivals":25340},{"month":"2021-07","type":"Sea","arrivals":108},{"month":"2021-08","type":"Air","arrivals":7194},{"month":"2021-08","type":"Land","arrivals":24361},{"month":"2021-08","type":"Sea","arrivals":103},{"month":"2021-09","type":"Air","arrivals":7822},{"month":"2021-09","type":"Land","arrivals":27103},{"month":"2021-09","type":"Sea","arrivals":92},{"month":"2021-10","type":"Air","arrivals":10529},{"month":"2021-10","type":"Land","arrivals":27938},{"month":"2021-10","type":"Sea","arrivals":97},{"month":"2021-11","type":"Air","arrivals":15362},{"month":"2021-11","type":"Land","arrivals":26652},{"month":"2021-11","type":"Sea","arrivals":309},{"month":"2021-12","type":"Air","arrivals":46135},{"month":"2021-12","type":"Land","arrivals":30617},{"month":"2021-12","type":"Sea","arrivals":383},{"month":"2022-01","type":"Air","arrivals":43440},{"month":"2022-01","type":"Land","arrivals":31812},{"month":"2022-01","type":"Sea","arrivals":1307},{"month":"2022-02","type":"Air","arrivals":39843},{"month":"2022-02","type":"Land","arrivals":28116},{"month":"2022-02","type":"Sea","arrivals":794},{"month":"2022-03","type":"Air","arrivals":53318},{"month":"2022-03","type":"Land","arrivals":38148},{"month":"2022-03","type":"Sea","arrivals":989},{"month":"2022-04","type":"Air","arrivals":136906},{"month":"2022-04","type":"Land","arrivals":458832},{"month":"2022-04","type":"Sea","arrivals":8952},{"month":"2022-05","type":"Air","arrivals":249315},{"month":"2022-05","type":"Land","arrivals":758666},{"month":"2022-05","type":"Sea","arrivals":29200},{"month":"2022-06","type":"Air","arrivals":317232},{"month":"2022-06","type":"Land","arrivals":1006549},{"month":"2022-06","type":"Sea","arrivals":65311},{"month":"2022-07","type":"Air","arrivals":408959},{"month":"2022-07","type":"Land","arrivals":1206957},{"month":"2022-07","type":"Sea","arrivals":83974},{"month":"2022-08","type":"Air","arrivals":465273},{"month":"2022-08","type":"Land","arrivals":1252591},{"month":"2022-08","type":"Sea","arrivals":90509},{"month":"2022-09","type":"Air","arrivals":465549},{"month":"2022-09","type":"Land","arrivals":1346011},{"month":"2022-09","type":"Sea","arrivals":88623},{"month":"2022-10","type":"Air","arrivals":509171},{"month":"2022-10","type":"Land","arrivals":1388442},{"month":"2022-10","type":"Sea","arrivals":124756},{"month":"2022-11","type":"Air","arrivals":542504},{"month":"2022-11","type":"Land","arrivals":1387231},{"month":"2022-11","type":"Sea","arrivals":118684},{"month":"2022-12","type":"Air","arrivals":615720},{"month":"2022-12","type":"Land","arrivals":1648220},{"month":"2022-12","type":"Sea","arrivals":136608},{"month":"2023-01","type":"Air","arrivals":635941},{"month":"2023-01","type":"Land","arrivals":1471426},{"month":"2023-01","type":"Sea","arrivals":127605},{"month":"2023-02","type":"Air","arrivals":607116},{"month":"2023-02","type":"Land","arrivals":1331166},{"month":"2023-02","type":"Sea","arrivals":109024},{"month":"2023-03","type":"Air","arrivals":702915},{"month":"2023-03","type":"Land","arrivals":1577057},{"month":"2023-03","type":"Sea","arrivals":108131},{"month":"2023-04","type":"Air","arrivals":683979},{"month":"2023-04","type":"Land","arrivals":1507897},{"month":"2023-04","type":"Sea","arrivals":90491},{"month":"2023-05","type":"Air","arrivals":724971},{"month":"2023-05","type":"Land","arrivals":1556847},{"month":"2023-05","type":"Sea","arrivals":134478},{"month":"2023-06","type":"Air","arrivals":604032},{"month":"2023-06","type":"Land","arrivals":1701027},{"month":"2023-06","type":"Sea","arrivals":94534},{"month":"2023-07","type":"Air","arrivals":949875},{"month":"2023-07","type":"Land","arrivals":1788235},{"month":"2023-07","type":"Sea","arrivals":91707},{"month":"2023-08","type":"Air","arrivals":906103},{"month":"2023-08","type":"Land","arrivals":1704512},{"month":"2023-08","type":"Sea","arrivals":90812},{"month":"2023-09","type":"Air","arrivals":811571},{"month":"2023-09","type":"Land","arrivals":1804373},{"month":"2023-09","type":"Sea","arrivals":102525},{"month":"2023-10","type":"Air","arrivals":769323},{"month":"2023-10","type":"Land","arrivals":1806110},{"month":"2023-10","type":"Sea","arrivals":80846},{"month":"2023-11","type":"Air","arrivals":804246},{"month":"2023-11","type":"Land","arrivals":1769480},{"month":"2023-11","type":"Sea","arrivals":89443}
-  ]},
+  "padding": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 20
+  },
+  "data": {
+    "values": [
+      {
+        "month": "2020-01",
+        "type": "Air",
+        "arrivals": 989752
+      },
+      {
+        "month": "2020-01",
+        "type": "Land",
+        "arrivals": 1784148
+      },
+      {
+        "month": "2020-01",
+        "type": "Sea",
+        "arrivals": 149153
+      },
+      {
+        "month": "2020-02",
+        "type": "Air",
+        "arrivals": 645444
+      },
+      {
+        "month": "2020-02",
+        "type": "Land",
+        "arrivals": 1225913
+      },
+      {
+        "month": "2020-02",
+        "type": "Sea",
+        "arrivals": 125965
+      },
+      {
+        "month": "2020-03",
+        "type": "Air",
+        "arrivals": 250669
+      },
+      {
+        "month": "2020-03",
+        "type": "Land",
+        "arrivals": 743686
+      },
+      {
+        "month": "2020-03",
+        "type": "Sea",
+        "arrivals": 70684
+      },
+      {
+        "month": "2020-04",
+        "type": "Air",
+        "arrivals": 427
+      },
+      {
+        "month": "2020-04",
+        "type": "Land",
+        "arrivals": 14523
+      },
+      {
+        "month": "2020-04",
+        "type": "Sea",
+        "arrivals": 127
+      },
+      {
+        "month": "2020-05",
+        "type": "Air",
+        "arrivals": 633
+      },
+      {
+        "month": "2020-05",
+        "type": "Land",
+        "arrivals": 13571
+      },
+      {
+        "month": "2020-05",
+        "type": "Sea",
+        "arrivals": 78
+      },
+      {
+        "month": "2020-06",
+        "type": "Air",
+        "arrivals": 1269
+      },
+      {
+        "month": "2020-06",
+        "type": "Land",
+        "arrivals": 12927
+      },
+      {
+        "month": "2020-06",
+        "type": "Sea",
+        "arrivals": 204
+      },
+      {
+        "month": "2020-07",
+        "type": "Air",
+        "arrivals": 5693
+      },
+      {
+        "month": "2020-07",
+        "type": "Land",
+        "arrivals": 14128
+      },
+      {
+        "month": "2020-07",
+        "type": "Sea",
+        "arrivals": 524
+      },
+      {
+        "month": "2020-08",
+        "type": "Air",
+        "arrivals": 5962
+      },
+      {
+        "month": "2020-08",
+        "type": "Land",
+        "arrivals": 15959
+      },
+      {
+        "month": "2020-08",
+        "type": "Sea",
+        "arrivals": 308
+      },
+      {
+        "month": "2020-09",
+        "type": "Air",
+        "arrivals": 5975
+      },
+      {
+        "month": "2020-09",
+        "type": "Land",
+        "arrivals": 16171
+      },
+      {
+        "month": "2020-09",
+        "type": "Sea",
+        "arrivals": 496
+      },
+      {
+        "month": "2020-10",
+        "type": "Air",
+        "arrivals": 5768
+      },
+      {
+        "month": "2020-10",
+        "type": "Land",
+        "arrivals": 16550
+      },
+      {
+        "month": "2020-10",
+        "type": "Sea",
+        "arrivals": 431
+      },
+      {
+        "month": "2020-11",
+        "type": "Air",
+        "arrivals": 5744
+      },
+      {
+        "month": "2020-11",
+        "type": "Land",
+        "arrivals": 18886
+      },
+      {
+        "month": "2020-11",
+        "type": "Sea",
+        "arrivals": 343
+      },
+      {
+        "month": "2020-12",
+        "type": "Air",
+        "arrivals": 5142
+      },
+      {
+        "month": "2020-12",
+        "type": "Land",
+        "arrivals": 24345
+      },
+      {
+        "month": "2020-12",
+        "type": "Sea",
+        "arrivals": 410
+      },
+      {
+        "month": "2021-01",
+        "type": "Air",
+        "arrivals": 6478
+      },
+      {
+        "month": "2021-01",
+        "type": "Land",
+        "arrivals": 29012
+      },
+      {
+        "month": "2021-01",
+        "type": "Sea",
+        "arrivals": 377
+      },
+      {
+        "month": "2021-02",
+        "type": "Air",
+        "arrivals": 6190
+      },
+      {
+        "month": "2021-02",
+        "type": "Land",
+        "arrivals": 26520
+      },
+      {
+        "month": "2021-02",
+        "type": "Sea",
+        "arrivals": 599
+      },
+      {
+        "month": "2021-03",
+        "type": "Air",
+        "arrivals": 10261
+      },
+      {
+        "month": "2021-03",
+        "type": "Land",
+        "arrivals": 31603
+      },
+      {
+        "month": "2021-03",
+        "type": "Sea",
+        "arrivals": 570
+      },
+      {
+        "month": "2021-04",
+        "type": "Air",
+        "arrivals": 10041
+      },
+      {
+        "month": "2021-04",
+        "type": "Land",
+        "arrivals": 27238
+      },
+      {
+        "month": "2021-04",
+        "type": "Sea",
+        "arrivals": 601
+      },
+      {
+        "month": "2021-05",
+        "type": "Air",
+        "arrivals": 7253
+      },
+      {
+        "month": "2021-05",
+        "type": "Land",
+        "arrivals": 27878
+      },
+      {
+        "month": "2021-05",
+        "type": "Sea",
+        "arrivals": 303
+      },
+      {
+        "month": "2021-06",
+        "type": "Air",
+        "arrivals": 4626
+      },
+      {
+        "month": "2021-06",
+        "type": "Land",
+        "arrivals": 24900
+      },
+      {
+        "month": "2021-06",
+        "type": "Sea",
+        "arrivals": 81
+      },
+      {
+        "month": "2021-07",
+        "type": "Air",
+        "arrivals": 5883
+      },
+      {
+        "month": "2021-07",
+        "type": "Land",
+        "arrivals": 25340
+      },
+      {
+        "month": "2021-07",
+        "type": "Sea",
+        "arrivals": 108
+      },
+      {
+        "month": "2021-08",
+        "type": "Air",
+        "arrivals": 7194
+      },
+      {
+        "month": "2021-08",
+        "type": "Land",
+        "arrivals": 24361
+      },
+      {
+        "month": "2021-08",
+        "type": "Sea",
+        "arrivals": 103
+      },
+      {
+        "month": "2021-09",
+        "type": "Air",
+        "arrivals": 7822
+      },
+      {
+        "month": "2021-09",
+        "type": "Land",
+        "arrivals": 27103
+      },
+      {
+        "month": "2021-09",
+        "type": "Sea",
+        "arrivals": 92
+      },
+      {
+        "month": "2021-10",
+        "type": "Air",
+        "arrivals": 10529
+      },
+      {
+        "month": "2021-10",
+        "type": "Land",
+        "arrivals": 27938
+      },
+      {
+        "month": "2021-10",
+        "type": "Sea",
+        "arrivals": 97
+      },
+      {
+        "month": "2021-11",
+        "type": "Air",
+        "arrivals": 15362
+      },
+      {
+        "month": "2021-11",
+        "type": "Land",
+        "arrivals": 26652
+      },
+      {
+        "month": "2021-11",
+        "type": "Sea",
+        "arrivals": 309
+      },
+      {
+        "month": "2021-12",
+        "type": "Air",
+        "arrivals": 46135
+      },
+      {
+        "month": "2021-12",
+        "type": "Land",
+        "arrivals": 30617
+      },
+      {
+        "month": "2021-12",
+        "type": "Sea",
+        "arrivals": 383
+      },
+      {
+        "month": "2022-01",
+        "type": "Air",
+        "arrivals": 43440
+      },
+      {
+        "month": "2022-01",
+        "type": "Land",
+        "arrivals": 31812
+      },
+      {
+        "month": "2022-01",
+        "type": "Sea",
+        "arrivals": 1307
+      },
+      {
+        "month": "2022-02",
+        "type": "Air",
+        "arrivals": 39843
+      },
+      {
+        "month": "2022-02",
+        "type": "Land",
+        "arrivals": 28116
+      },
+      {
+        "month": "2022-02",
+        "type": "Sea",
+        "arrivals": 794
+      },
+      {
+        "month": "2022-03",
+        "type": "Air",
+        "arrivals": 53318
+      },
+      {
+        "month": "2022-03",
+        "type": "Land",
+        "arrivals": 38148
+      },
+      {
+        "month": "2022-03",
+        "type": "Sea",
+        "arrivals": 989
+      },
+      {
+        "month": "2022-04",
+        "type": "Air",
+        "arrivals": 136906
+      },
+      {
+        "month": "2022-04",
+        "type": "Land",
+        "arrivals": 458832
+      },
+      {
+        "month": "2022-04",
+        "type": "Sea",
+        "arrivals": 8952
+      },
+      {
+        "month": "2022-05",
+        "type": "Air",
+        "arrivals": 249315
+      },
+      {
+        "month": "2022-05",
+        "type": "Land",
+        "arrivals": 758666
+      },
+      {
+        "month": "2022-05",
+        "type": "Sea",
+        "arrivals": 29200
+      },
+      {
+        "month": "2022-06",
+        "type": "Air",
+        "arrivals": 317232
+      },
+      {
+        "month": "2022-06",
+        "type": "Land",
+        "arrivals": 1006549
+      },
+      {
+        "month": "2022-06",
+        "type": "Sea",
+        "arrivals": 65311
+      },
+      {
+        "month": "2022-07",
+        "type": "Air",
+        "arrivals": 408959
+      },
+      {
+        "month": "2022-07",
+        "type": "Land",
+        "arrivals": 1206957
+      },
+      {
+        "month": "2022-07",
+        "type": "Sea",
+        "arrivals": 83974
+      },
+      {
+        "month": "2022-08",
+        "type": "Air",
+        "arrivals": 465273
+      },
+      {
+        "month": "2022-08",
+        "type": "Land",
+        "arrivals": 1252591
+      },
+      {
+        "month": "2022-08",
+        "type": "Sea",
+        "arrivals": 90509
+      },
+      {
+        "month": "2022-09",
+        "type": "Air",
+        "arrivals": 465549
+      },
+      {
+        "month": "2022-09",
+        "type": "Land",
+        "arrivals": 1346011
+      },
+      {
+        "month": "2022-09",
+        "type": "Sea",
+        "arrivals": 88623
+      },
+      {
+        "month": "2022-10",
+        "type": "Air",
+        "arrivals": 509171
+      },
+      {
+        "month": "2022-10",
+        "type": "Land",
+        "arrivals": 1388442
+      },
+      {
+        "month": "2022-10",
+        "type": "Sea",
+        "arrivals": 124756
+      },
+      {
+        "month": "2022-11",
+        "type": "Air",
+        "arrivals": 542504
+      },
+      {
+        "month": "2022-11",
+        "type": "Land",
+        "arrivals": 1387231
+      },
+      {
+        "month": "2022-11",
+        "type": "Sea",
+        "arrivals": 118684
+      },
+      {
+        "month": "2022-12",
+        "type": "Air",
+        "arrivals": 615720
+      },
+      {
+        "month": "2022-12",
+        "type": "Land",
+        "arrivals": 1648220
+      },
+      {
+        "month": "2022-12",
+        "type": "Sea",
+        "arrivals": 136608
+      },
+      {
+        "month": "2023-01",
+        "type": "Air",
+        "arrivals": 635941
+      },
+      {
+        "month": "2023-01",
+        "type": "Land",
+        "arrivals": 1471426
+      },
+      {
+        "month": "2023-01",
+        "type": "Sea",
+        "arrivals": 127605
+      },
+      {
+        "month": "2023-02",
+        "type": "Air",
+        "arrivals": 607116
+      },
+      {
+        "month": "2023-02",
+        "type": "Land",
+        "arrivals": 1331166
+      },
+      {
+        "month": "2023-02",
+        "type": "Sea",
+        "arrivals": 109024
+      },
+      {
+        "month": "2023-03",
+        "type": "Air",
+        "arrivals": 702915
+      },
+      {
+        "month": "2023-03",
+        "type": "Land",
+        "arrivals": 1577057
+      },
+      {
+        "month": "2023-03",
+        "type": "Sea",
+        "arrivals": 108131
+      },
+      {
+        "month": "2023-04",
+        "type": "Air",
+        "arrivals": 683979
+      },
+      {
+        "month": "2023-04",
+        "type": "Land",
+        "arrivals": 1507897
+      },
+      {
+        "month": "2023-04",
+        "type": "Sea",
+        "arrivals": 90491
+      },
+      {
+        "month": "2023-05",
+        "type": "Air",
+        "arrivals": 724971
+      },
+      {
+        "month": "2023-05",
+        "type": "Land",
+        "arrivals": 1556847
+      },
+      {
+        "month": "2023-05",
+        "type": "Sea",
+        "arrivals": 134478
+      },
+      {
+        "month": "2023-06",
+        "type": "Air",
+        "arrivals": 604032
+      },
+      {
+        "month": "2023-06",
+        "type": "Land",
+        "arrivals": 1701027
+      },
+      {
+        "month": "2023-06",
+        "type": "Sea",
+        "arrivals": 94534
+      },
+      {
+        "month": "2023-07",
+        "type": "Air",
+        "arrivals": 949875
+      },
+      {
+        "month": "2023-07",
+        "type": "Land",
+        "arrivals": 1788235
+      },
+      {
+        "month": "2023-07",
+        "type": "Sea",
+        "arrivals": 91707
+      },
+      {
+        "month": "2023-08",
+        "type": "Air",
+        "arrivals": 906103
+      },
+      {
+        "month": "2023-08",
+        "type": "Land",
+        "arrivals": 1704512
+      },
+      {
+        "month": "2023-08",
+        "type": "Sea",
+        "arrivals": 90812
+      },
+      {
+        "month": "2023-09",
+        "type": "Air",
+        "arrivals": 811571
+      },
+      {
+        "month": "2023-09",
+        "type": "Land",
+        "arrivals": 1804373
+      },
+      {
+        "month": "2023-09",
+        "type": "Sea",
+        "arrivals": 102525
+      },
+      {
+        "month": "2023-10",
+        "type": "Air",
+        "arrivals": 769323
+      },
+      {
+        "month": "2023-10",
+        "type": "Land",
+        "arrivals": 1806110
+      },
+      {
+        "month": "2023-10",
+        "type": "Sea",
+        "arrivals": 80846
+      },
+      {
+        "month": "2023-11",
+        "type": "Air",
+        "arrivals": 804246
+      },
+      {
+        "month": "2023-11",
+        "type": "Land",
+        "arrivals": 1769480
+      },
+      {
+        "month": "2023-11",
+        "type": "Sea",
+        "arrivals": 89443
+      }
+    ]
+  },
   "layer": [
     {
-      "mark": {"type": "area","interpolate": "monotone","opacity": 0.9},
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.9
+      },
       "encoding": {
-        "x": {"field": "month","type": "temporal","timeUnit": "yearmonth","axis": {"title": "Month","titleFont": "DM Sans","titleFontSize": 12,"labelFont": "DM Sans","labelFontSize": 12,"labelAngle": -45,"grid": false,"format": "%B %Y"}},
-        "y": {"field": "arrivals","type": "quantitative","stack": true,"axis": {"title": "Total Arrivals","labelFont": "DM Sans","labelFontSize": 12,"titleFont": "DM Sans","titleFontSize": 12,"grid": false,"format": ".2s"}},
-        "color": {"field": "type","type": "nominal","scale": {"domain": ["Land","Air","Sea"],"range": ["#E69F00","#0072B2","#009E73"]},"legend": {"title": "Entry Type","orient": "bottom","offset": 0,"padding": 4,"labelFont": "DM Sans","labelFontSize": 12,"titleFont": "DM Sans","titleFontSize": 12}},
-        "order": {"field": "type","sort": "descending"},
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "axis": {
+            "title": "Month",
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "labelAngle": -45,
+            "grid": false,
+            "format": "%B %Y"
+          }
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative",
+          "stack": true,
+          "axis": {
+            "title": "Total Arrivals",
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleFontSize": 12,
+            "grid": false,
+            "format": ".2s"
+          }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Land",
+              "Air",
+              "Sea"
+            ],
+            "range": [
+              "#E69F00",
+              "#0072B2",
+              "#009E73"
+            ]
+          },
+          "legend": {
+            "title": "Entry Type",
+            "orient": "bottom",
+            "offset": 0,
+            "padding": 4,
+            "labelFont": "DM Sans",
+            "labelFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleFontSize": 12
+          }
+        },
+        "order": {
+          "field": "type",
+          "sort": "descending"
+        },
         "tooltip": [
-          {"field": "month","type": "temporal","timeUnit": "yearmonth","title": "Month","format": "%B %Y"},
-          {"field": "type","type": "nominal","title": "Entry Type"},
-          {"field": "arrivals","type": "quantitative","title": "Arrivals","format": ","}
+          {
+            "field": "month",
+            "type": "temporal",
+            "timeUnit": "yearmonth",
+            "title": "Month",
+            "format": "%B %Y"
+          },
+          {
+            "field": "type",
+            "type": "nominal",
+            "title": "Entry Type"
+          },
+          {
+            "field": "arrivals",
+            "type": "quantitative",
+            "title": "Arrivals",
+            "format": ","
+          }
         ]
       }
     },
     {
-      "mark": {"type": "rule","color": "#444444","strokeDash": [3,3],"strokeWidth": 1.2},
-      "data": {"values": [{"month": "2022-04"}]},
-      "encoding": {"x": {"field": "month","type": "temporal","timeUnit": "yearmonth"}}
+      "mark": {
+        "type": "rule",
+        "color": "#444444",
+        "strokeDash": [
+          3,
+          3
+        ],
+        "strokeWidth": 1.2
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2022-04"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        }
+      }
     },
     {
-      "mark": {"type": "text","align": "left","dx": 4,"dy": -90,"fontSize": 11,"fontStyle": "italic","color": "#444444","font": "DM Sans"},
-      "data": {"values": [{"month": "2022-04","label": "Borders reopened"}]},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "dy": -90,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#444444",
+        "font": "DM Sans"
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2022-04",
+            "label": "Borders reopened"
+          }
+        ]
+      },
       "encoding": {
-        "x": {"field": "month","type": "temporal","timeUnit": "yearmonth"},
-        "text": {"field": "label","type": "nominal"}
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 50,
+        "dy": 100,
+        "font": "DM Sans",
+        "fontStyle": "italic",
+        "fontSize": 11,
+        "color": "#444444"
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2020-02",
+            "arrivals": 2200000,
+            "label": "Land crossings dominate at over 66% of all arrivals."
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 80,
+        "dy": -10,
+        "font": "DM Sans",
+        "fontStyle": "italic",
+        "fontSize": 11,
+        "color": "#444444"
+      },
+      "data": {
+        "values": [
+          {
+            "month": "2020-02",
+            "arrivals": 100000,
+            "label": "Sea arrivals never exceed 5% of total entries."
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "timeUnit": "yearmonth"
+        },
+        "y": {
+          "field": "arrivals",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],
-  "config": {"background": "transparent","view": {"stroke": "transparent"}}
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    }
+  }
 }

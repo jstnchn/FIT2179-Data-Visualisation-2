@@ -1,260 +1,123 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 410,
-    "autosize": "fit",
-    "padding": {
-      "top": 0,
-      "left": 0,
-      "right": 5,
-      "bottom": 0
-    },
-    "data": {
-      "values": [
-        {
-          "year": "2020",
-          "group": "ASEAN",
-          "arrivals": 4528431
-        },
-        {
-          "year": "2020",
-          "group": "Non-ASEAN",
-          "arrivals": 1643577
-        },
-        {
-          "year": "2021",
-          "group": "ASEAN",
-          "arrivals": 373027
-        },
-        {
-          "year": "2021",
-          "group": "Non-ASEAN",
-          "arrivals": 97532
-        },
-        {
-          "year": "2022",
-          "group": "ASEAN",
-          "arrivals": 12311299
-        },
-        {
-          "year": "2022",
-          "group": "Non-ASEAN",
-          "arrivals": 2837213
-        },
-        {
-          "year": "2023",
-          "group": "ASEAN",
-          "arrivals": 23286007
-        },
-        {
-          "year": "2023",
-          "group": "Non-ASEAN",
-          "arrivals": 7229297
-        },
-        {
-          "year": "2024",
-          "group": "ASEAN",
-          "arrivals": 23133806
-        },
-        {
-          "year": "2024",
-          "group": "Non-ASEAN",
-          "arrivals": 8765360
-        }
-      ]
-    },
-    "layer": [
-      {
-        "mark": {
-          "type": "bar",
-          "cornerRadiusTopLeft": 3,
-          "cornerRadiusTopRight": 3
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal",
-            "sort": [
-              "2020",
-              "2021",
-              "2022",
-              "2023",
-              "2024"
-            ],
-            "axis": {
-              "title": "Year",
-              "titleFont": "DM Sans",
-              "titleFontSize": 12,
-              "labelFont": "DM Sans",
-              "labelFontSize": 11,
-              "labelAngle": 0,
-              "grid": false,
-              "ticks": false,
-              "domain": true
-            }
-          },
-          "y": {
-            "field": "arrivals",
-            "type": "quantitative",
-            "stack": false,
-            "axis": {
-              "title": "Tourist Arrivals",
-              "titleFont": "DM Sans",
-              "titleFontSize": 11,
-              "labelFont": "DM Sans",
-              "labelFontSize": 10,
-              "grid": false,
-              "domain": true,
-              "format": ".2s",
-              "tickCount": 4
-            }
-          },
-          "color": {
-            "field": "group",
-            "type": "nominal",
-            "scale": {
-              "domain": [
-                "ASEAN",
-                "Non-ASEAN"
-              ],
-              "range": [
-                "#5c4d8a",
-                "#c45c8a"
-              ]
-            },
-            "legend": {
-              "title": "Origin",
-              "titleFont": "DM Sans",
-              "titleFontSize": 11,
-              "labelFont": "DM Sans",
-              "labelFontSize": 10,
-              "orient": "bottom"
-            }
-          },
-          "tooltip": [
-            {
-              "field": "year",
-              "type": "ordinal",
-              "title": "Year"
-            },
-            {
-              "field": "group",
-              "type": "nominal",
-              "title": "Origin"
-            },
-            {
-              "field": "arrivals",
-              "type": "quantitative",
-              "title": "Arrivals",
-              "format": ","
-            }
-          ],
-          "xOffset": {
-            "field": "group",
-            "type": "nominal",
-            "sort": [
-              "ASEAN",
-              "Non-ASEAN"
-            ]
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "center",
-          "baseline": "bottom",
-          "dy": -6,
-          "fontSize": 10,
-          "fontStyle": "italic",
-          "font": "DM Sans",
-          "color": "#a01818"
-        },
-        "transform": [
-          {
-            "filter": "datum.group === 'Non-ASEAN'"
-          },
-          {
-            "aggregate": [
-              {
-                "op": "sum",
-                "field": "arrivals",
-                "as": "total"
-              }
-            ],
-            "groupby": [
-              "year"
-            ]
-          },
-          {
-            "filter": "datum.year === '2021'"
-          }
-        ],
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "total",
-            "type": "quantitative"
-          },
-          "text": {
-            "value": "Pandemic low"
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "center",
-          "baseline": "bottom",
-          "dx": -90,
-          "dy": -205,
-          "fontSize": 10,
-          "fontStyle": "italic",
-          "font": "DM Sans",
-          "color": "#1a3d7a"
-        },
-        "transform": [
-          {
-            "filter": "datum.group === 'Non-ASEAN'"
-          },
-          {
-            "aggregate": [
-              {
-                "op": "sum",
-                "field": "arrivals",
-                "as": "total"
-              }
-            ],
-            "groupby": [
-              "year"
-            ]
-          },
-          {
-            "filter": "datum.year === '2024'"
-          }
-        ],
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "total",
-            "type": "quantitative"
-          },
-          "text": {
-            "value": "ASEAN dominance easing"
-          }
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 410,
+  "autosize": "fit",
+  "padding": {"top": 0, "bottom": 0, "left": 0, "right": 20},
+  "data": {
+    "values": [
+      {"year": "2020", "month": "January", "month_num": 1, "arrivals": 2923053},
+      {"year": "2020", "month": "February", "month_num": 2, "arrivals": 1997322},
+      {"year": "2020", "month": "March", "month_num": 3, "arrivals": 1065039},
+      {"year": "2020", "month": "April", "month_num": 4, "arrivals": 15077},
+      {"year": "2020", "month": "May", "month_num": 5, "arrivals": 14282},
+      {"year": "2020", "month": "June", "month_num": 6, "arrivals": 14400},
+      {"year": "2020", "month": "July", "month_num": 7, "arrivals": 20345},
+      {"year": "2020", "month": "August", "month_num": 8, "arrivals": 22229},
+      {"year": "2020", "month": "September", "month_num": 9, "arrivals": 22642},
+      {"year": "2020", "month": "October", "month_num": 10, "arrivals": 22749},
+      {"year": "2020", "month": "November", "month_num": 11, "arrivals": 24973},
+      {"year": "2020", "month": "December", "month_num": 12, "arrivals": 29897},
+      {"year": "2021", "month": "January", "month_num": 1, "arrivals": 35867},
+      {"year": "2021", "month": "February", "month_num": 2, "arrivals": 33308},
+      {"year": "2021", "month": "March", "month_num": 3, "arrivals": 42434},
+      {"year": "2021", "month": "April", "month_num": 4, "arrivals": 37880},
+      {"year": "2021", "month": "May", "month_num": 5, "arrivals": 35434},
+      {"year": "2021", "month": "June", "month_num": 6, "arrivals": 29607},
+      {"year": "2021", "month": "July", "month_num": 7, "arrivals": 31331},
+      {"year": "2021", "month": "August", "month_num": 8, "arrivals": 31658},
+      {"year": "2021", "month": "September", "month_num": 9, "arrivals": 35017},
+      {"year": "2021", "month": "October", "month_num": 10, "arrivals": 38564},
+      {"year": "2021", "month": "November", "month_num": 11, "arrivals": 42323},
+      {"year": "2021", "month": "December", "month_num": 12, "arrivals": 77133},
+      {"year": "2022", "month": "January", "month_num": 1, "arrivals": 76559},
+      {"year": "2022", "month": "February", "month_num": 2, "arrivals": 68753},
+      {"year": "2022", "month": "March", "month_num": 3, "arrivals": 92455},
+      {"year": "2022", "month": "April", "month_num": 4, "arrivals": 604690},
+      {"year": "2022", "month": "May", "month_num": 5, "arrivals": 1037181},
+      {"year": "2022", "month": "June", "month_num": 6, "arrivals": 1389092},
+      {"year": "2022", "month": "July", "month_num": 7, "arrivals": 1699890},
+      {"year": "2022", "month": "August", "month_num": 8, "arrivals": 1808373},
+      {"year": "2022", "month": "September", "month_num": 9, "arrivals": 1900183},
+      {"year": "2022", "month": "October", "month_num": 10, "arrivals": 2022369},
+      {"year": "2022", "month": "November", "month_num": 11, "arrivals": 2048419},
+      {"year": "2022", "month": "December", "month_num": 12, "arrivals": 2400548},
+      {"year": "2023", "month": "January", "month_num": 1, "arrivals": 2234972},
+      {"year": "2023", "month": "February", "month_num": 2, "arrivals": 2047306},
+      {"year": "2023", "month": "March", "month_num": 3, "arrivals": 2388103},
+      {"year": "2023", "month": "April", "month_num": 4, "arrivals": 2282367},
+      {"year": "2023", "month": "May", "month_num": 5, "arrivals": 2416296},
+      {"year": "2023", "month": "June", "month_num": 6, "arrivals": 2399593},
+      {"year": "2023", "month": "July", "month_num": 7, "arrivals": 2829817},
+      {"year": "2023", "month": "August", "month_num": 8, "arrivals": 2701427},
+      {"year": "2023", "month": "September", "month_num": 9, "arrivals": 2718469},
+      {"year": "2023", "month": "October", "month_num": 10, "arrivals": 2656279},
+      {"year": "2023", "month": "November", "month_num": 11, "arrivals": 2663169},
+      {"year": "2023", "month": "December", "month_num": 12, "arrivals": 3173506},
+      {"year": "2024", "month": "January", "month_num": 1, "arrivals": 2522991},
+      {"year": "2024", "month": "February", "month_num": 2, "arrivals": 2329685},
+      {"year": "2024", "month": "March", "month_num": 3, "arrivals": 2700650},
+      {"year": "2024", "month": "April", "month_num": 4, "arrivals": 2608703},
+      {"year": "2024", "month": "May", "month_num": 5, "arrivals": 2751424},
+      {"year": "2024", "month": "June", "month_num": 6, "arrivals": 2740913},
+      {"year": "2024", "month": "July", "month_num": 7, "arrivals": 3058318},
+      {"year": "2024", "month": "August", "month_num": 8, "arrivals": 2853555},
+      {"year": "2024", "month": "September", "month_num": 9, "arrivals": 2635706},
+      {"year": "2024", "month": "October", "month_num": 10, "arrivals": 2674487},
+      {"year": "2024", "month": "November", "month_num": 11, "arrivals": 2733580},
+      {"year": "2024", "month": "December", "month_num": 12, "arrivals": 3289154}
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year",
+        "titleFont": "DM Sans",
+        "titleFontSize": 12,
+        "labelFont": "DM Sans",
+        "labelFontSize": 12,
+        "labelAngle": -45
       }
-    ],
-    "config": {
-      "background": "transparent",
-      "view": {
-        "stroke": "transparent"
+    },
+    "y": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": {"field": "month_num"},
+      "axis": {
+        "title": "Month",
+        "titleFont": "DM Sans",
+        "titleFontSize": 12,
+        "labelFont": "DM Sans",
+        "labelFontSize": 12
       }
-    }
+    },
+    "color": {
+      "field": "arrivals",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      },
+      "legend": {
+        "title": "Arrivals",
+        "titleFont": "DM Sans",
+        "labelFont": "DM Sans",
+        "titleFontSize": 12,
+        "labelFontSize": 11,
+        "format": ".2s",
+        "orient": "bottom"
+      }
+    },
+    "tooltip": [
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "month", "type": "ordinal", "title": "Month"},
+      {"field": "arrivals", "type": "quantitative", "title": "Arrivals", "format": ","}
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "view": {"stroke": "transparent"}
   }
+}

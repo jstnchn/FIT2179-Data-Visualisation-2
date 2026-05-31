@@ -5,7 +5,7 @@
   "autosize": "fit",
   "padding": {
     "top": 0,
-    "bottom": 0,
+    "bottom": 5,
     "left": 0,
     "right": 20
   },
@@ -1501,7 +1501,7 @@
           "field": "arrivals",
           "type": "quantitative",
           "axis": {
-            "title": "Monthly Arrivals",
+            "title": "Quarterly Arrivals",
             "format": ".2s",
             "labelFont": "DM Sans",
             "labelFontSize": 12,
