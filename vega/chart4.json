@@ -662,11 +662,16 @@
           {
             "field": "total_arrivals",
             "type": "quantitative",
-            "title": "Total Arrivals (2020–2023)",
+            "title": "Total Arrivals (2020\u20132023)",
             "format": ","
           }
         ]
-      }
+      },
+      "transform": [
+        {
+          "filter": "type_filter === 'All' || datum.type === type_filter"
+        }
+      ]
     },
     {
       "data": {
@@ -737,5 +742,27 @@
     "view": {
       "stroke": "transparent"
     }
-  }
+  },
+  "params": [
+    {
+      "name": "type_filter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Land",
+          "Air",
+          "Sea"
+        ],
+        "labels": [
+          "All entry types",
+          "Land only",
+          "Air only",
+          "Sea only"
+        ],
+        "name": "Filter by entry type: "
+      }
+    }
+  ]
 }

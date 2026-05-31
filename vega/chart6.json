@@ -804,8 +804,27 @@
             "title": "Arrivals",
             "format": ","
           }
-        ]
-      }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "type_select",
+            "value": 0.9
+          },
+          "value": 0.15
+        }
+      },
+      "params": [
+        {
+          "name": "type_select",
+          "select": {
+            "type": "point",
+            "fields": [
+              "type"
+            ]
+          },
+          "bind": "legend"
+        }
+      ]
     },
     {
       "mark": {

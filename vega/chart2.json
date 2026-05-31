@@ -201,7 +201,61 @@
             "title": "Arrivals",
             "format": ","
           }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "hover_year",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "size": {
+          "condition": {
+            "param": "hover_year",
+            "empty": false,
+            "value": 80
+          },
+          "value": 0
+        }
+      },
+      "params": [
+        {
+          "name": "hover_year",
+          "select": {
+            "type": "point",
+            "on": "mouseover",
+            "nearest": true,
+            "fields": [
+              "year"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "param": "hover_year",
+            "empty": false
+          }
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "#2c3e50",
+        "strokeWidth": 1,
+        "strokeDash": [
+          2,
+          2
         ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        }
       }
     },
     {
